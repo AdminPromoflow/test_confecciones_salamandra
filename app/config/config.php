@@ -26,16 +26,16 @@ define('DEFAULT_METHOD', 'index');
 if (ENVIRONMENT == 'development') {
     // Configuracion de la base de datos en desarrollo
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'u348170507_oscar');
+    define('DB_USER', '4348170507_oscar');
     define('DB_PASS', 'Con_Salamadra_2026!');
-    define('DB_NAME', 'u348170507_con_salamandra');
+    define('DB_NAME', '4348170507_con_salamandra');
     define('DB_CHAR', 'utf8mb4');
 } else {
     // Configuracion de la base de datos en produccion
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'u348170507_oscar');
-    define('DB_PASS', 'Con_Salamadra_2026!');
-    define('DB_NAME', 'u348170507_con_salamandra');
+    define('DB_USER', 'u467113866_4dm1n');
+    define('DB_PASS', 'Q2w3e4r5t6y@*');
+    define('DB_NAME', 'u467113866_salamandra2');
     define('DB_CHAR', 'utf8mb4');
 }
 
