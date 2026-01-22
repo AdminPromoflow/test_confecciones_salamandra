@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Flash Able - Most Trusted Admin Template</title>
+	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 11]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Flash Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+	<meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, Flash Able, Flash Able bootstrap admin template">
+	<meta name="author" content="Codedthemes" />
+
+	<!-- Favicon icon -->
+	<link rel="icon" href="<?php echo url_path('public/') ?>assets/images/favicon.ico" type="image/x-icon">
+	<!-- fontawesome icon -->
+	<link rel="stylesheet" href="<?php echo url_path('public/') ?>assets/fonts/fontawesome/css/fontawesome-all.min.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="<?php echo url_path('public/') ?>assets/plugins/animation/css/animate.min.css">
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="<?php echo url_path('public/') ?>assets/css/style.css">
+
+
+
+
+</head>
+
+<!-- [ auth-signin ] start -->
+<div class="auth-wrapper d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+	<div class="auth-content container">
+		<div class="card">
+			<div class="row align-items-center">
+				<div class="col-md-6 mx-auto"> <!-- Usamos mx-auto para centrar el col-md-6 -->
+					<div class="card-body">
+						<h4 class="mb-3 f-w-400">Iniciar Sesión</h4>
+						<form action="<?php echo url_path('backend/auth/process') ?>" method="post" autocomplete="off" novalidate>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="feather icon-home"></i></span>
+								</div>
+								<select type="text" class="form-control" id="select-sucursales" name="idSucursal" value="">
+									<?php foreach ($sucursales as $sucursal) : ?>
+										<option value="<?php echo $sucursal->id_sucursal ?>"><?php echo $sucursal->nombre ?></option>
+									<?php endforeach; ?>
+								</select>
+							</div>
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="feather icon-user"></i></span>
+								</div>
+								<input type="text" class="form-control" name="usuario" placeholder="Usuario">
+							</div>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="feather icon-lock"></i></span>
+								</div>
+								<input type="password" class="form-control" name="password" placeholder="Contraseña">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block mb-4" name="entrar">Entrar al sistema</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- [ auth-signin ] end -->
+
+<!-- Required Js -->
+<script src="<?php echo url_path('public/') ?>assets/js/vendor-all.min.js"></script>
+<script src="<?php echo url_path('public/') ?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

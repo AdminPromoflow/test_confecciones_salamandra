@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  Options -Multiviews
+
+  RewriteEngine On
+
+  RewriteBase srv881-files.hstgr.io/8d1c3a12bb370281/files/public_html/public/
+  # RewriteBase /salamandra/public/
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+   Header set Access-Control-Allow-Origin "*"
+</IfModule>
+<FilesMatch ".(eot|ttf|otf|woff)">
+   Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
