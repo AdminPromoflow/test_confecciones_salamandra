@@ -34,7 +34,7 @@ if (ENVIRONMENT == 'development') {
     // Configuracion de la base de datos en produccion
     define('DB_HOST', 'localhost');
     define('DB_USER', 'u348170507_oscar');
-    define('DB_PASS', 'Con_Salamadra_2026!|');
+    define('DB_PASS', 'Con_Salamadra_2026!');
     define('DB_NAME', 'u348170507_con_salamandra');
     define('DB_CHAR', 'utf8mb4');
 }
