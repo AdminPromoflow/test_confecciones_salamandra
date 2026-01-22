@@ -29,14 +29,14 @@ if (ENVIRONMENT == 'development') {
     define('DB_USER', '4348170507_oscar');
     define('DB_PASS', 'Con_Salamadra_2026!');
     define('DB_NAME', '4348170507_con_salamandra');
-    //define('DB_CHAR', 'utf8mb4');
+    define('DB_CHAR', 'utf8mb4');
 } else {
     // Configuracion de la base de datos en produccion
     define('DB_HOST', 'localhost');
     define('DB_USER', '4348170507_oscar');
     define('DB_PASS', 'Con_Salamadra_2026!');
     define('DB_NAME', '4348170507_con_salamandra');
-  //  define('DB_CHAR', 'utf8mb4');
+    define('DB_CHAR', 'utf8mb4');
 }
 
 // Configuración de PHPMailer
