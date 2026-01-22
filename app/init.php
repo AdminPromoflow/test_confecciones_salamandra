@@ -1,5 +1,11 @@
 <?php
 
+
+
+
+    require_once __DIR__ . '/../logs/Logger.php';
+    Logger::init(__DIR__ . '/../logs/app.log');
+
     // Verificar el estado actual de la sesión
     $current_session_status = session_status();
 
@@ -27,6 +33,9 @@
     if (ENABLE_SESSION && $current_session_status !== PHP_SESSION_ACTIVE) {
         session_start();
     }
+
+    Logger::log('Entré al controller ProductsController');
+    Logger::echo('Este texto se ve y también queda guardado');
 
     require_once FUNCTIONS_PATH . 'functions.php';
 
