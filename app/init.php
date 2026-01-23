@@ -1,10 +1,9 @@
 <?php
 
-
-
-
     require_once __DIR__ . '/../logs/Logger.php';
     Logger::init(__DIR__ . '/../logs/app.log');
+
+      Logger::log('1. ');
 
     // Verificar el estado actual de la sesión
     $current_session_status = session_status();
