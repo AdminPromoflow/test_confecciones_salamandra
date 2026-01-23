@@ -9,7 +9,7 @@ define('PROJECT_LOCAL', 'localhost/salamandra');
 define('PROJECT_REMOTE', 'www.aleinarossui.com');
 define('APP_VERSION', '2.0.0');
 
-if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+if ($_SERVER['SERVER_ADDR'] === '127.0.0.1' || $_SERVER['SERVER_ADDR'] === '::1' || $_SERVER['SERVER_ADDR'] === 'localhost') {
     define('ENVIRONMENT', 'development'); // Configuración del entorno
     define('ENABLE_SESSION', TRUE); // Por defecto, las sesiones están desactivadas
     define('URL_PATH', 'http://' . PROJECT_LOCAL . '/'); // Acceso relativo
@@ -20,6 +20,12 @@ if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
 }
 
 
+// Opción 1: Detectar por HTTP_HOST
+if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+    // desarrollo
+} else {
+    // producción
+}
 
 // Controlador por defecto y Metodo por defecto
 define('DEFAULT_CONTROLLER', 'home');
