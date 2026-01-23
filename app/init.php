@@ -34,8 +34,6 @@
         session_start();
     }
 
-    Logger::log('Entré al controller ProductsController');
-    Logger::echo('Este texto se ve y también queda guardado');
 
     require_once FUNCTIONS_PATH . 'functions.php';
 
