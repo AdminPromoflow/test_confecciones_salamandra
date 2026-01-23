@@ -1,0 +1,630 @@
+2025-02-05 23:09:17 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhggNkNCQTg0RTlBRkFERjhBRUE1NTBBQ0YzMUY3OEQ2MTMA","timestamp":"1738796955","text":{"body":"Hola"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:09:17 - Respuesta API WhatsApp (401): {"error":{"message":"Error validating access token: Session has expired on Wednesday, 05-Feb-25 15:00:00 PST. The current time is Wednesday, 05-Feb-25 15:09:17 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"A2r_ClgWdV9EnmWKm97bY0W"}}
+2025-02-05 23:12:27 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhggMjMxMkFGOTE4MkM4QjVDQ0QzRkEzQzExQTZCQ0U0OEMA","timestamp":"1738797146","text":{"body":"Holla"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:12:29 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODA0NUNGM0VBN0JFQThDQkEwAA=="}]}
+2025-02-05 23:12:30 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODA0NUNGM0VBN0JFQThDQkEwAA==","status":"sent","timestamp":"1738797149","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:12:30 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODA0NUNGM0VBN0JFQThDQkEwAA==","status":"read","timestamp":"1738797149","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:12:33 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhggMERDMzBEM0EwODFDMEQzNTA3NDc5Qjk1NDJGOEVGOEIA","timestamp":"1738797152","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:12:34 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEIzRTVDM0U4MkNEOTY4OTcwAA=="}]}
+2025-02-05 23:12:35 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEIzRTVDM0U4MkNEOTY4OTcwAA==","status":"sent","timestamp":"1738797154","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:12:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEIzRTVDM0U4MkNEOTY4OTcwAA==","status":"read","timestamp":"1738797154","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:14:23 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhggMTZDMzUxREMyRDNDMEQyMEVCRUUyNjQ1QzJCQTc5QUIA","timestamp":"1738797262","text":{"body":"39619345"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:14:23 - Iniciando manejo de opción 2. Estado actual: solicitando_cedula
+2025-02-05 23:14:23 - Guardando cédula en archivo temporal: 39619345
+2025-02-05 23:14:24 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEJBQzlCOEQzNDZFRjQ2NURFAA=="}]}
+2025-02-05 23:14:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEJBQzlCOEQzNDZFRjQ2NURFAA==","status":"sent","timestamp":"1738797264","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:14:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEJBQzlCOEQzNDZFRjQ2NURFAA==","status":"read","timestamp":"1738797264","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:14:37 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhggMjM1RjIxQUExQkNFNjQ3MkM3M0JGNUFDMDBFNUM2QjkA","timestamp":"1738797276","text":{"body":"4328"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:14:37 - Iniciando manejo de opción 2. Estado actual: solicitando_factura
+2025-02-05 23:14:37 - Procesando factura...
+2025-02-05 23:14:37 - Consultando factura para cédula: 39619345, factura: 4328
+2025-02-05 23:14:37 - Conectando a la base de datos...
+2025-02-05 23:14:37 - Conexión exitosa
+2025-02-05 23:14:37 - Ejecutando consulta cliente: SELECT id_cliente FROM clientes WHERE cedula = :cedula
+2025-02-05 23:14:37 - Cliente encontrado: Array
+(
+    [id_cliente] => 2143
+    [0] => 2143
+)
+
+2025-02-05 23:14:37 - Ejecutando consulta detalles: 
+            SELECT
+                p.codigo,
+                p.nombre,
+                p.talla,
+                dv.estado,
+                dv.fecha_entrega
+            FROM detalle_venta dv
+            JOIN productos p ON dv.id_producto = p.id_producto
+            WHERE dv.id_venta = :factura
+            AND dv.estado IN (0, 1, 2, 3)
+            AND dv.id_cliente = :id_cliente
+        
+2025-02-05 23:14:37 - Detalles encontrados: Array
+(
+    [0] => Array
+        (
+            [codigo] => RIPTXL
+            [0] => RIPTXL
+            [nombre] => PANTALONETA
+            [1] => PANTALONETA
+            [talla] => XL
+            [2] => XL
+            [estado] => 3
+            [3] => 3
+            [fecha_entrega] => 2025-02-05 00:00:00
+            [4] => 2025-02-05 00:00:00
+        )
+
+    [1] => Array
+        (
+            [codigo] => RIBUXL
+            [0] => RIBUXL
+            [nombre] => Buso negro
+            [1] => Buso negro
+            [talla] => XL
+            [2] => XL
+            [estado] => 0
+            [3] => 0
+            [fecha_entrega] => 2025-02-05 00:00:00
+            [4] => 2025-02-05 00:00:00
+        )
+
+)
+
+2025-02-05 23:14:37 - Resultados encontrados: Array
+(
+    [0] => Array
+        (
+            [codigo] => RIPTXL
+            [0] => RIPTXL
+            [nombre] => PANTALONETA
+            [1] => PANTALONETA
+            [talla] => XL
+            [2] => XL
+            [estado] => 🟡 Listo para entrega
+            [3] => 3
+            [fecha_entrega] => 2025-02-05 00:00:00
+            [4] => 2025-02-05 00:00:00
+        )
+
+    [1] => Array
+        (
+            [codigo] => RIBUXL
+            [0] => RIBUXL
+            [nombre] => Buso negro
+            [1] => Buso negro
+            [talla] => XL
+            [2] => XL
+            [estado] => 🔴 Pendiente de producción
+            [3] => 0
+            [fecha_entrega] => 2025-02-05 00:00:00
+            [4] => 2025-02-05 00:00:00
+        )
+
+)
+
+2025-02-05 23:14:37 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNkRGRURDQzkwRTBDRDQ1QjBFAA=="}]}
+2025-02-05 23:14:38 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNkRGRURDQzkwRTBDRDQ1QjBFAA==","status":"sent","timestamp":"1738797278","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:14:39 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNkRGRURDQzkwRTBDRDQ1QjBFAA==","status":"read","timestamp":"1738797278","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:29:12 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMEEzOTg3MEZGNjJFNjgwMDI2MQA=","timestamp":"1738798152","text":{"body":"hola buenas tades"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:29:13 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNEZEODlDOEQ3RkYyNzA2MEJGAA=="}]}
+2025-02-05 23:29:14 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNEZEODlDOEQ3RkYyNzA2MEJGAA==","status":"sent","timestamp":"1738798154","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:29:15 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNEZEODlDOEQ3RkYyNzA2MEJGAA==","status":"read","timestamp":"1738798154","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:29:15 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNEZEODlDOEQ3RkYyNzA2MEJGAA==","status":"delivered","timestamp":"1738798154","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:29:41 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDFBRTYyMDkyQUZGMTM2NkRCQwA=","timestamp":"1738798180","text":{"body":"3"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:29:42 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQzBENUYyOTdERkNCQUM1NDMyAA=="}]}
+2025-02-05 23:29:42 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQzBENUYyOTdERkNCQUM1NDMyAA==","status":"sent","timestamp":"1738798182","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:29:43 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQzBENUYyOTdERkNCQUM1NDMyAA==","status":"read","timestamp":"1738798182","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:24 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDFCQ0NFODY4QTJGOUJCMzM2NQA=","timestamp":"1738798223","text":{"body":"4"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:30:25 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzE1NUMyRDY3RDU4NzkwRDA3AA=="}]}
+2025-02-05 23:30:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzE1NUMyRDY3RDU4NzkwRDA3AA==","status":"delivered","timestamp":"1738798225","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzE1NUMyRDY3RDU4NzkwRDA3AA==","status":"sent","timestamp":"1738798225","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzE1NUMyRDY3RDU4NzkwRDA3AA==","status":"delivered","timestamp":"1738798225","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzE1NUMyRDY3RDU4NzkwRDA3AA==","status":"read","timestamp":"1738798225","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:30:34 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDFFMjAxNzZCOThBQzE5NjkxRQA=","timestamp":"1738798233","text":{"body":"5"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:30:35 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDNCRTUyNENEMEEyQUJGREI5AA=="}]}
+2025-02-05 23:30:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDNCRTUyNENEMEEyQUJGREI5AA==","status":"delivered","timestamp":"1738798235","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDNCRTUyNENEMEEyQUJGREI5AA==","status":"delivered","timestamp":"1738798235","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDNCRTUyNENEMEEyQUJGREI5AA==","status":"read","timestamp":"1738798235","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:30:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDNCRTUyNENEMEEyQUJGREI5AA==","status":"sent","timestamp":"1738798235","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:44 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMEU1QzJCMjY3QjQxRDhCREI2QgA=","timestamp":"1738798243","text":{"body":"hola buenas tardes"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:30:44 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEE0N0EyMjgyRjE4OEY4QzI0AA=="}]}
+2025-02-05 23:30:45 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEE0N0EyMjgyRjE4OEY4QzI0AA==","status":"sent","timestamp":"1738798244","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:45 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEE0N0EyMjgyRjE4OEY4QzI0AA==","status":"delivered","timestamp":"1738798245","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:30:46 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSOEE0N0EyMjgyRjE4OEY4QzI0AA==","status":"read","timestamp":"1738798245","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:31:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMEI3MERCQzA5MjI0MUM5QUExQgA=","timestamp":"1738798264","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:31:06 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE4M0VBOEU1MzI2MEVBN0UzAA=="}]}
+2025-02-05 23:31:07 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE4M0VBOEU1MzI2MEVBN0UzAA==","status":"sent","timestamp":"1738798266","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:31:07 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE4M0VBOEU1MzI2MEVBN0UzAA==","status":"delivered","timestamp":"1738798266","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:31:07 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE4M0VBOEU1MzI2MEVBN0UzAA==","status":"delivered","timestamp":"1738798266","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:31:08 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE4M0VBOEU1MzI2MEVBN0UzAA==","status":"read","timestamp":"1738798267","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:32:23 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMEUwNDc4MzBBMUMxM0VEM0UzMgA=","timestamp":"1738798342","text":{"body":"63449546"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:32:23 - Iniciando manejo de opción 2. Estado actual: solicitando_cedula
+2025-02-05 23:32:23 - Guardando cédula en archivo temporal: 63449546
+2025-02-05 23:32:24 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQkE1RTg0MUEzMUE3MTE3NUYzAA=="}]}
+2025-02-05 23:32:24 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQkE1RTg0MUEzMUE3MTE3NUYzAA==","status":"sent","timestamp":"1738798344","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:32:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQkE1RTg0MUEzMUE3MTE3NUYzAA==","status":"delivered","timestamp":"1738798344","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:32:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQkE1RTg0MUEzMUE3MTE3NUYzAA==","status":"read","timestamp":"1738798345","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:32:38 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDAwNEY1OEE5Q0FBRjFDOTdEQgA=","timestamp":"1738798357","text":{"body":"4731"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:32:38 - Iniciando manejo de opción 2. Estado actual: solicitando_factura
+2025-02-05 23:32:38 - Procesando factura...
+2025-02-05 23:32:38 - Consultando factura para cédula: 63449546, factura: 4731
+2025-02-05 23:32:38 - Conectando a la base de datos...
+2025-02-05 23:32:38 - Conexión exitosa
+2025-02-05 23:32:38 - Ejecutando consulta cliente: SELECT id_cliente FROM clientes WHERE cedula = :cedula
+2025-02-05 23:32:38 - Cliente encontrado: Array
+(
+    [id_cliente] => 2315
+    [0] => 2315
+)
+
+2025-02-05 23:32:38 - Ejecutando consulta detalles: 
+            SELECT
+                p.codigo,
+                p.nombre,
+                p.talla,
+                dv.estado,
+                dv.fecha_entrega
+            FROM detalle_venta dv
+            JOIN productos p ON dv.id_producto = p.id_producto
+            WHERE dv.id_venta = :factura
+            AND dv.estado IN (0, 1, 2, 3)
+            AND dv.id_cliente = :id_cliente
+        
+2025-02-05 23:32:38 - Detalles encontrados: Array
+(
+    [0] => Array
+        (
+            [codigo] => CCCBM
+            [0] => CCCBM
+            [nombre] => CAMIBUSO COLEGIAL
+            [1] => CAMIBUSO COLEGIAL
+            [talla] => M
+            [2] => M
+            [estado] => 0
+            [3] => 0
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [1] => Array
+        (
+            [codigo] => CCCBM
+            [0] => CCCBM
+            [nombre] => CAMIBUSO COLEGIAL
+            [1] => CAMIBUSO COLEGIAL
+            [talla] => M
+            [2] => M
+            [estado] => 0
+            [3] => 0
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [2] => Array
+        (
+            [codigo] => CCPTM
+            [0] => CCPTM
+            [nombre] => PANTALONETA
+            [1] => PANTALONETA
+            [talla] => M
+            [2] => M
+            [estado] => 3
+            [3] => 3
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [3] => Array
+        (
+            [codigo] => CCCQFM
+            [0] => CCCQFM
+            [nombre] => CHAQUETA FISICA
+            [1] => CHAQUETA FISICA
+            [talla] => M
+            [2] => M
+            [estado] => 3
+            [3] => 3
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [4] => Array
+        (
+            [codigo] => CCCOJR
+            [0] => CCCOJR
+            [nombre] => CORBATAS
+            [1] => CORBATAS
+            [talla] => 
+            [2] => 
+            [estado] => 0
+            [3] => 0
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+)
+
+2025-02-05 23:32:38 - Resultados encontrados: Array
+(
+    [0] => Array
+        (
+            [codigo] => CCCBM
+            [0] => CCCBM
+            [nombre] => CAMIBUSO COLEGIAL
+            [1] => CAMIBUSO COLEGIAL
+            [talla] => M
+            [2] => M
+            [estado] => 🔴 Pendiente de producción
+            [3] => 0
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [1] => Array
+        (
+            [codigo] => CCCBM
+            [0] => CCCBM
+            [nombre] => CAMIBUSO COLEGIAL
+            [1] => CAMIBUSO COLEGIAL
+            [talla] => M
+            [2] => M
+            [estado] => 🔴 Pendiente de producción
+            [3] => 0
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [2] => Array
+        (
+            [codigo] => CCPTM
+            [0] => CCPTM
+            [nombre] => PANTALONETA
+            [1] => PANTALONETA
+            [talla] => M
+            [2] => M
+            [estado] => 🟡 Listo para entrega
+            [3] => 3
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [3] => Array
+        (
+            [codigo] => CCCQFM
+            [0] => CCCQFM
+            [nombre] => CHAQUETA FISICA
+            [1] => CHAQUETA FISICA
+            [talla] => M
+            [2] => M
+            [estado] => 🟡 Listo para entrega
+            [3] => 3
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+    [4] => Array
+        (
+            [codigo] => CCCOJR
+            [0] => CCCOJR
+            [nombre] => CORBATAS
+            [1] => CORBATAS
+            [talla] => 
+            [2] => 
+            [estado] => 🔴 Pendiente de producción
+            [3] => 0
+            [fecha_entrega] => 2025-02-12 00:00:00
+            [4] => 2025-02-12 00:00:00
+        )
+
+)
+
+2025-02-05 23:32:39 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE3QTU3NTg5QjVDQzFENUZFAA=="}]}
+2025-02-05 23:32:39 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE3QTU3NTg5QjVDQzFENUZFAA==","status":"sent","timestamp":"1738798359","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:32:40 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE3QTU3NTg5QjVDQzFENUZFAA==","status":"delivered","timestamp":"1738798359","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:32:40 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE3QTU3NTg5QjVDQzFENUZFAA==","status":"delivered","timestamp":"1738798359","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:32:40 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUE3QTU3NTg5QjVDQzFENUZFAA==","status":"read","timestamp":"1738798359","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:34:03 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDUyODU3NzUzN0I1RTc3ODRDNQA=","timestamp":"1738798442","text":{"body":"hola"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:34:04 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzdGNzM2NUM1RDE0QkI0RUI1AA=="}]}
+2025-02-05 23:34:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzdGNzM2NUM1RDE0QkI0RUI1AA==","status":"sent","timestamp":"1738798444","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:34:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzdGNzM2NUM1RDE0QkI0RUI1AA==","status":"delivered","timestamp":"1738798444","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:34:06 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzdGNzM2NUM1RDE0QkI0RUI1AA==","status":"read","timestamp":"1738798445","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:34:44 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDFBQkZGQzVFMThGMkQ3NzZFNQA=","timestamp":"1738798483","text":{"body":"1"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:34:45 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSRjdBQzM0QzI4NUE4OEY4OTQ0AA=="}]}
+2025-02-05 23:34:46 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSRjdBQzM0QzI4NUE4OEY4OTQ0AA==","status":"sent","timestamp":"1738798485","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:34:46 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSRjdBQzM0QzI4NUE4OEY4OTQ0AA==","status":"delivered","timestamp":"1738798485","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:34:46 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSRjdBQzM0QzI4NUE4OEY4OTQ0AA==","status":"read","timestamp":"1738798486","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:35:03 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMEVDNzYzQTFBRTQ5NEY1MjM3NwA=","timestamp":"1738798502","text":{"body":"1"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:35:03 - Iniciando manejo de opción 1. Estado actual: solicitando_institucion
+2025-02-05 23:35:04 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODUxNTk5MjA4ODdFMzRFRTBGAA=="}]}
+2025-02-05 23:35:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODUxNTk5MjA4ODdFMzRFRTBGAA==","status":"sent","timestamp":"1738798504","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:35:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODUxNTk5MjA4ODdFMzRFRTBGAA==","status":"delivered","timestamp":"1738798504","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:35:20 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDQyMTZDMEFGMjI2RDkwNDFBNgA=","timestamp":"1738798520","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:35:20 - Iniciando manejo de opción 1. Estado actual: mostrando_institucion
+2025-02-05 23:35:21 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSODUxNTk5MjA4ODdFMzRFRTBGAA==","status":"read","timestamp":"1738798520","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:35:21 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzcxOTc1MjNCMzk1NzRDNEE4AA=="}]}
+2025-02-05 23:35:22 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzcxOTc1MjNCMzk1NzRDNEE4AA==","status":"sent","timestamp":"1738798521","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:35:22 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzcxOTc1MjNCMzk1NzRDNEE4AA==","status":"read","timestamp":"1738798522","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-05 23:35:23 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMzcxOTc1MjNCMzk1NzRDNEE4AA==","status":"delivered","timestamp":"1738798522","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:45:41 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQjlGNDM4RjNFM0ZDRTZBMDlCAA==","status":"delivered","timestamp":"1738799139","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:45:41 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQjlGNDM4RjNFM0ZDRTZBMDlCAA==","status":"sent","timestamp":"1738799139","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:45:41 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQjlGNDM4RjNFM0ZDRTZBMDlCAA==","status":"delivered","timestamp":"1738799139","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:45:45 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQjlGNDM4RjNFM0ZDRTZBMDlCAA==","status":"read","timestamp":"1738799144","recipient_id":"573124858575"}]},"field":"messages"}]}]}
+2025-02-05 23:46:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggQ0FFRjdENDgyQzdGQjk4QzIzMUNCM0Y0RjI2NTc4OUUA","timestamp":"1738799164","text":{"body":"Buenas noches"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:46:06 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0I4MDAwMzdGOTFGNEFDNTU5AA=="}]}
+2025-02-05 23:46:07 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0I4MDAwMzdGOTFGNEFDNTU5AA==","status":"sent","timestamp":"1738799166","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:07 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0I4MDAwMzdGOTFGNEFDNTU5AA==","status":"delivered","timestamp":"1738799167","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:07 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0I4MDAwMzdGOTFGNEFDNTU5AA==","status":"read","timestamp":"1738799167","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:24 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNzk5NjlEMEU2MkUxRkY0Q0YxQTI4Qzk2NDJFMTVFODIA","timestamp":"1738799183","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:46:24 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkYzQjk2OERBOUZBOEI1QTE3AA=="}]}
+2025-02-05 23:46:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkYzQjk2OERBOUZBOEI1QTE3AA==","status":"delivered","timestamp":"1738799185","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkYzQjk2OERBOUZBOEI1QTE3AA==","status":"read","timestamp":"1738799185","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkYzQjk2OERBOUZBOEI1QTE3AA==","status":"sent","timestamp":"1738799185","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:35 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMDg0NjkyREJDRTA0QkJCRkY5MjM4RTZBRjc5QzM5RTIA","timestamp":"1738799194","text":{"body":"79343219"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:46:35 - Iniciando manejo de opción 2. Estado actual: solicitando_cedula
+2025-02-05 23:46:35 - Guardando cédula en archivo temporal: 79343219
+2025-02-05 23:46:36 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOEM0QThEMzA0MEM5RjM3MjQ2AA=="}]}
+2025-02-05 23:46:37 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOEM0QThEMzA0MEM5RjM3MjQ2AA==","status":"sent","timestamp":"1738799196","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:37 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOEM0QThEMzA0MEM5RjM3MjQ2AA==","status":"delivered","timestamp":"1738799196","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:46:37 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOEM0QThEMzA0MEM5RjM3MjQ2AA==","status":"read","timestamp":"1738799196","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:47:34 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNTk3NkI4RjUwRTIyQzY2MDQ5OTRFODZCMTY2Nzc3NzAA","timestamp":"1738799253","text":{"body":"4541"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-05 23:47:34 - Iniciando manejo de opción 2. Estado actual: solicitando_factura
+2025-02-05 23:47:34 - Procesando factura...
+2025-02-05 23:47:34 - Consultando factura para cédula: 79343219, factura: 4541
+2025-02-05 23:47:34 - Conectando a la base de datos...
+2025-02-05 23:47:34 - Conexión exitosa
+2025-02-05 23:47:34 - Ejecutando consulta cliente: SELECT id_cliente FROM clientes WHERE cedula = :cedula
+2025-02-05 23:47:34 - Cliente encontrado: Array
+(
+    [id_cliente] => 1
+    [0] => 1
+)
+
+2025-02-05 23:47:34 - Ejecutando consulta detalles: 
+            SELECT
+                p.codigo,
+                p.nombre,
+                p.talla,
+                dv.estado,
+                dv.fecha_entrega
+            FROM detalle_venta dv
+            JOIN productos p ON dv.id_producto = p.id_producto
+            WHERE dv.id_venta = :factura
+            AND dv.estado IN (0, 1, 2, 3)
+            AND dv.id_cliente = :id_cliente
+        
+2025-02-05 23:47:34 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRjc2NjBGMkVCMDI3NzQ1NDI3AA=="}]}
+2025-02-05 23:47:35 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRjc2NjBGMkVCMDI3NzQ1NDI3AA==","status":"read","timestamp":"1738799255","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:47:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRjc2NjBGMkVCMDI3NzQ1NDI3AA==","status":"delivered","timestamp":"1738799255","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-05 23:47:36 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRjc2NjBGMkVCMDI3NzQ1NDI3AA==","status":"sent","timestamp":"1738799255","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:35:22 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNUQyN0U0QzY3RUU5QTkzNTJERTBCNzFCQjIxODUxRkMA","timestamp":"1738802121","text":{"body":"Buenas noches"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:35:23 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRTQ3MzVGMDJBOUFFRkZCQjRDAA=="}]}
+2025-02-06 00:35:24 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRTQ3MzVGMDJBOUFFRkZCQjRDAA==","status":"sent","timestamp":"1738802123","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:35:24 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRTQ3MzVGMDJBOUFFRkZCQjRDAA==","status":"read","timestamp":"1738802123","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:35:40 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMDU2OTU1MEQ1MEM2MTNBOTVBRUY3ODExNjYwMjJEQjIA","timestamp":"1738802139","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:35:41 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0MxODkzMEZBQUVBRjE2NTg5AA=="}]}
+2025-02-06 00:35:42 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0MxODkzMEZBQUVBRjE2NTg5AA==","status":"sent","timestamp":"1738802141","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:35:42 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0MxODkzMEZBQUVBRjE2NTg5AA==","status":"read","timestamp":"1738802141","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:35:59 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggRDQ0QkI2MTk5RDM5MjA1REM1QjkzN0VDN0NFQjNGQ0UA","timestamp":"1738802158","text":{"body":"79342219"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:35:59 - Iniciando manejo de opción 2. Estado actual: solicitando_cedula
+2025-02-06 00:35:59 - Guardando cédula en archivo temporal: 79342219
+2025-02-06 00:36:00 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRDY3OEVERTA5QzlCQUE5NzM0AA=="}]}
+2025-02-06 00:36:01 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRDY3OEVERTA5QzlCQUE5NzM0AA==","status":"sent","timestamp":"1738802160","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:36:02 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRDY3OEVERTA5QzlCQUE5NzM0AA==","status":"read","timestamp":"1738802160","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:36:11 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNDA5QjY5ODM3MzlGQzBFNjYyN0NGMDU2MjQyRjFGOUYA","timestamp":"1738802170","text":{"body":"1"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:36:11 - Iniciando manejo de opción 2. Estado actual: solicitando_factura
+2025-02-06 00:36:11 - Procesando factura...
+2025-02-06 00:36:11 - Consultando factura para cédula: 79342219, factura: 1
+2025-02-06 00:36:11 - Conectando a la base de datos...
+2025-02-06 00:36:11 - Conexión exitosa
+2025-02-06 00:36:11 - Ejecutando consulta cliente: SELECT id_cliente FROM clientes WHERE cedula = :cedula
+2025-02-06 00:36:11 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSMzNGODBFN0Q3ODgzNkZFODk1AA=="}]}
+2025-02-06 00:36:13 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSMzNGODBFN0Q3ODgzNkZFODk1AA==","status":"read","timestamp":"1738802172","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:36:13 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSMzNGODBFN0Q3ODgzNkZFODk1AA==","status":"sent","timestamp":"1738802172","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:24 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggRjJEQjRDNjRFOEYwNjg1N0UzOTFDODBFNzUzMjc4MjYA","timestamp":"1738802303","text":{"body":"Buenas"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:38:25 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkJEMkM0QzQzRUY1RkZGNDY1AA=="}]}
+2025-02-06 00:38:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkJEMkM0QzQzRUY1RkZGNDY1AA==","status":"sent","timestamp":"1738802305","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkJEMkM0QzQzRUY1RkZGNDY1AA==","status":"read","timestamp":"1738802305","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:31 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMUJBQzU1MzlERjg5QTcwQURCOTM0QTQ1NTE1MUJGQkIA","timestamp":"1738802310","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:38:32 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQTgzQzIzNjg1REY2QzZENENEAA=="}]}
+2025-02-06 00:38:33 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQTgzQzIzNjg1REY2QzZENENEAA==","status":"sent","timestamp":"1738802312","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:33 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQTgzQzIzNjg1REY2QzZENENEAA==","status":"read","timestamp":"1738802312","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:45 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggQThDRTk4OEU3RjQ2Q0MwNURBNkQzQTVERTA5ODFGNDcA","timestamp":"1738802324","text":{"body":"52349921"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:38:45 - Iniciando manejo de opción 2. Estado actual: solicitando_cedula
+2025-02-06 00:38:45 - Guardando cédula en archivo temporal: 52349921
+2025-02-06 00:38:45 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRDJFRjExNEFEQzAzQ0E5RjQ4AA=="}]}
+2025-02-06 00:38:47 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRDJFRjExNEFEQzAzQ0E5RjQ4AA==","status":"sent","timestamp":"1738802326","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:47 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRDJFRjExNEFEQzAzQ0E5RjQ4AA==","status":"read","timestamp":"1738802326","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:53 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggQ0MzMEI5MTUxRjJDOTdFMTg2MTA1RUVFNDA3RkMzN0IA","timestamp":"1738802332","text":{"body":"4757"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 00:38:53 - Iniciando manejo de opción 2. Estado actual: solicitando_factura
+2025-02-06 00:38:53 - Procesando factura...
+2025-02-06 00:38:53 - Consultando factura para cédula: 52349921, factura: 4757
+2025-02-06 00:38:53 - Conectando a la base de datos...
+2025-02-06 00:38:53 - Conexión exitosa
+2025-02-06 00:38:53 - Ejecutando consulta cliente: SELECT id_cliente FROM clientes WHERE cedula = :cedula
+2025-02-06 00:38:53 - Cliente encontrado: Array
+(
+    [id_cliente] => 2303
+    [0] => 2303
+)
+
+2025-02-06 00:38:53 - Ejecutando consulta detalles: 
+            SELECT
+                p.codigo,
+                p.nombre,
+                p.talla,
+                dv.estado,
+                dv.fecha_entrega
+            FROM detalle_venta dv
+            JOIN productos p ON dv.id_producto = p.id_producto
+            WHERE dv.id_venta = :factura
+            AND dv.estado IN (0, 1, 2, 3)
+            AND dv.id_cliente = :id_cliente
+        
+2025-02-06 00:38:54 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSODY0RjFDNkQzMkQ3NDFDRUYyAA=="}]}
+2025-02-06 00:38:55 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSODY0RjFDNkQzMkQ3NDFDRUYyAA==","status":"sent","timestamp":"1738802334","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 00:38:55 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSODY0RjFDNkQzMkQ3NDFDRUYyAA==","status":"read","timestamp":"1738802334","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:05 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDFBN0I5QUUyMEFDQ0U5MzU1MQA=","timestamp":"1738804084","text":{"body":"hola"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 01:08:07 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMTA2MDMyOTgwMTZFMzA5NTNBAA=="}]}
+2025-02-06 01:08:08 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMTA2MDMyOTgwMTZFMzA5NTNBAA==","status":"sent","timestamp":"1738804087","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:08 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMTA2MDMyOTgwMTZFMzA5NTNBAA==","status":"delivered","timestamp":"1738804087","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:08 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMTA2MDMyOTgwMTZFMzA5NTNBAA==","status":"read","timestamp":"1738804087","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-06 01:08:13 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMEQzNzJDODA1MzRFRkJENTY5MwA=","timestamp":"1738804092","text":{"body":"1"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 01:08:14 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDM0MTA0RTI0QzM4QzgzMDgwAA=="}]}
+2025-02-06 01:08:15 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDM0MTA0RTI0QzM4QzgzMDgwAA==","status":"sent","timestamp":"1738804094","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:15 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDM0MTA0RTI0QzM4QzgzMDgwAA==","status":"delivered","timestamp":"1738804094","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:15 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDM0MTA0RTI0QzM4QzgzMDgwAA==","status":"delivered","timestamp":"1738804094","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:15 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSNDM0MTA0RTI0QzM4QzgzMDgwAA==","status":"read","timestamp":"1738804094","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-06 01:08:17 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDgxQkEzRTgzNEFCNkQxQzQ1MQA=","timestamp":"1738804097","text":{"body":"1"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 01:08:17 - Iniciando manejo de opción 1. Estado actual: solicitando_institucion
+2025-02-06 01:08:18 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQTFFNTA5NTEyNDU1RDlCNjMwAA=="}]}
+2025-02-06 01:08:19 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQTFFNTA5NTEyNDU1RDlCNjMwAA==","status":"sent","timestamp":"1738804098","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:19 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQTFFNTA5NTEyNDU1RDlCNjMwAA==","status":"delivered","timestamp":"1738804099","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:20 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSQTFFNTA5NTEyNDU1RDlCNjMwAA==","status":"read","timestamp":"1738804099","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-06 01:08:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Mario \u00c1lvarez"},"wa_id":"573505168604"}],"messages":[{"from":"573505168604","id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAEhgWM0VCMDRBNjI2NDA3QzE0NDg1M0RBQgA=","timestamp":"1738804104","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 01:08:25 - Iniciando manejo de opción 1. Estado actual: mostrando_institucion
+2025-02-06 01:08:26 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573505168604","wa_id":"573505168604"}],"messages":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUQxQUMwQUEzQUU0MDk3MEUyAA=="}]}
+2025-02-06 01:08:27 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUQxQUMwQUEzQUU0MDk3MEUyAA==","status":"sent","timestamp":"1738804106","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","expiration_timestamp":"1738816200","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:27 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUQxQUMwQUEzQUU0MDk3MEUyAA==","status":"delivered","timestamp":"1738804106","recipient_id":"573505168604","conversation":{"id":"dc7eaa1eb6499c84465394b8587ae83d","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 01:08:28 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczNTA1MTY4NjA0FQIAERgSMUQxQUMwQUEzQUU0MDk3MEUyAA==","status":"read","timestamp":"1738804107","recipient_id":"573505168604"}]},"field":"messages"}]}]}
+2025-02-06 02:38:38 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNzU2MTg4RkQ5QkYxNzZGMTc5MUFBMzM1OTQ0RUI0MjIA","timestamp":"1738809516","text":{"body":"Hola"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:38:39 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQkQ2RjA5OUM2MjQxRUYyN0Q5AA=="}]}
+2025-02-06 02:38:40 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQkQ2RjA5OUM2MjQxRUYyN0Q5AA==","status":"sent","timestamp":"1738809519","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:41 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQkQ2RjA5OUM2MjQxRUYyN0Q5AA==","status":"read","timestamp":"1738809520","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:46 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMUEzMTY4RjY0Q0MzOTM0QURDQThDMEVEOEZGQ0E4RTAA","timestamp":"1738809525","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:38:47 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0FFM0UzMjhCMEM4MkJGMjkwAA=="}]}
+2025-02-06 02:38:48 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0FFM0UzMjhCMEM4MkJGMjkwAA==","status":"read","timestamp":"1738809527","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:48 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSN0FFM0UzMjhCMEM4MkJGMjkwAA==","status":"sent","timestamp":"1738809527","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:51 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggQzBDMDJENDY5QzE1OEEzODcwOEYzMERDNjhFNTk5OTgA","timestamp":"1738809530","text":{"body":"79628265"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:38:51 - Iniciando manejo de opción 2. Estado actual: solicitando_cedula
+2025-02-06 02:38:51 - Guardando cédula en archivo temporal: 79628265
+2025-02-06 02:38:51 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTlEMjQ1MUE1RDU0QUQ2NTE0AA=="}]}
+2025-02-06 02:38:52 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTlEMjQ1MUE1RDU0QUQ2NTE0AA==","status":"sent","timestamp":"1738809532","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:53 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTlEMjQ1MUE1RDU0QUQ2NTE0AA==","status":"read","timestamp":"1738809532","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:56 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMTM3OEQzQ0I1MzNFQkY3RTE4MzE1QjMyNjhFMzI1RkMA","timestamp":"1738809535","text":{"body":"4646"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:38:56 - Iniciando manejo de opción 2. Estado actual: solicitando_factura
+2025-02-06 02:38:56 - Procesando factura...
+2025-02-06 02:38:56 - Consultando factura para cédula: 79628265, factura: 4646
+2025-02-06 02:38:56 - Conectando a la base de datos...
+2025-02-06 02:38:56 - Conexión exitosa
+2025-02-06 02:38:56 - Ejecutando consulta cliente: SELECT id_cliente FROM clientes WHERE cedula = :cedula
+2025-02-06 02:38:56 - Cliente encontrado: Array
+(
+    [id_cliente] => 2281
+    [0] => 2281
+)
+
+2025-02-06 02:38:56 - Ejecutando consulta detalles: 
+            SELECT
+                p.codigo,
+                p.nombre,
+                p.talla,
+                dv.estado,
+                dv.fecha_entrega
+            FROM detalle_venta dv
+            JOIN productos p ON dv.id_producto = p.id_producto
+            WHERE dv.id_venta = :factura
+            AND dv.estado IN (0, 1, 2, 3)
+            AND dv.id_cliente = :id_cliente
+        
+2025-02-06 02:38:56 - Detalles encontrados: Array
+(
+    [0] => Array
+        (
+            [codigo] => RIPF4
+            [0] => RIPF4
+            [nombre] => PANTALON FISICA
+            [1] => PANTALON FISICA
+            [talla] => 4
+            [2] => 4
+            [estado] => 0
+            [3] => 0
+            [fecha_entrega] => 2025-01-31 00:00:00
+            [4] => 2025-01-31 00:00:00
+        )
+
+    [1] => Array
+        (
+            [codigo] => RIBU6
+            [0] => RIBU6
+            [nombre] => Buso negro
+            [1] => Buso negro
+            [talla] => 6
+            [2] => 6
+            [estado] => 0
+            [3] => 0
+            [fecha_entrega] => 2025-01-31 00:00:00
+            [4] => 2025-01-31 00:00:00
+        )
+
+)
+
+2025-02-06 02:38:56 - Resultados encontrados: Array
+(
+    [0] => Array
+        (
+            [codigo] => RIPF4
+            [0] => RIPF4
+            [nombre] => PANTALON FISICA
+            [1] => PANTALON FISICA
+            [talla] => 4
+            [2] => 4
+            [estado] => 🔴 Pendiente de producción
+            [3] => 0
+            [fecha_entrega] => 2025-01-31 00:00:00
+            [4] => 2025-01-31 00:00:00
+        )
+
+    [1] => Array
+        (
+            [codigo] => RIBU6
+            [0] => RIBU6
+            [nombre] => Buso negro
+            [1] => Buso negro
+            [talla] => 6
+            [2] => 6
+            [estado] => 🔴 Pendiente de producción
+            [3] => 0
+            [fecha_entrega] => 2025-01-31 00:00:00
+            [4] => 2025-01-31 00:00:00
+        )
+
+)
+
+2025-02-06 02:38:57 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQ0FDQzIyNTBEMEQ1Mzc2MzQ0AA=="}]}
+2025-02-06 02:38:58 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQ0FDQzIyNTBEMEQ1Mzc2MzQ0AA==","status":"sent","timestamp":"1738809537","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:38:58 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSQ0FDQzIyNTBEMEQ1Mzc2MzQ0AA==","status":"read","timestamp":"1738809537","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:52:23 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggOTQ3NDdCRUUzNjgwQTY5NkM1MzJCMDE0QkQyMjU1OUYA","timestamp":"1738810342","text":{"body":"Hola"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:52:24 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNDYxQjVDNEI5MjhBRTgwNjE5AA=="}]}
+2025-02-06 02:52:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNDYxQjVDNEI5MjhBRTgwNjE5AA==","status":"sent","timestamp":"1738810344","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:52:26 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNDYxQjVDNEI5MjhBRTgwNjE5AA==","status":"read","timestamp":"1738810344","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:52:35 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMDZFNEU0Q0QxRDQwMzRDMjE0MjlBNjJEOEQ3NjU1MDMA","timestamp":"1738810354","text":{"body":"1"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:52:36 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkE5NkI2RUI1NkVBQkY1NDhGAA=="}]}
+2025-02-06 02:52:37 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkE5NkI2RUI1NkVBQkY1NDhGAA==","status":"sent","timestamp":"1738810356","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:52:40 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSRkE5NkI2RUI1NkVBQkY1NDhGAA==","status":"read","timestamp":"1738810359","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:53:10 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggN0M0RjFGODc5OTVDNTM0REFEM0U4RDIzNTA2MzNDRTAA","timestamp":"1738810389","text":{"body":"3"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:53:10 - Iniciando manejo de opción 1. Estado actual: solicitando_institucion
+2025-02-06 02:53:11 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNEIwQTlGM0I1MzlFMUQwQTAwAA=="}]}
+2025-02-06 02:53:12 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNEIwQTlGM0I1MzlFMUQwQTAwAA==","status":"sent","timestamp":"1738810391","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:53:13 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNEIwQTlGM0I1MzlFMUQwQTAwAA==","status":"read","timestamp":"1738810392","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:53:27 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNTFFNjRBODk4MDQ4NzVEQzI5RENBMDMwRkU3NjhCMzcA","timestamp":"1738810405","text":{"body":"2"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:53:27 - Iniciando manejo de opción 1. Estado actual: mostrando_institucion
+2025-02-06 02:53:28 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNzAwMTI4QjhDOTc3Q0Y0MjEwAA=="}]}
+2025-02-06 02:53:29 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNzAwMTI4QjhDOTc3Q0Y0MjEwAA==","status":"sent","timestamp":"1738810408","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:53:29 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNzAwMTI4QjhDOTc3Q0Y0MjEwAA==","status":"read","timestamp":"1738810408","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:53:46 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNkY2NzA1QzNEQzVGRUM4QTUwMDQ4RjE2MTY3QTg1M0MA","timestamp":"1738810425","text":{"body":"Si al\u00f3"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:53:47 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTI1MEJGMzFCQzRBNkFFNTBCAA=="}]}
+2025-02-06 02:53:48 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTI1MEJGMzFCQzRBNkFFNTBCAA==","status":"sent","timestamp":"1738810427","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:53:49 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTI1MEJGMzFCQzRBNkFFNTBCAA==","status":"read","timestamp":"1738810428","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:54:17 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMjFERjNCRTZGQzUxMEM3NDlFOUJDM0NFNjA2RjlGMzQA","timestamp":"1738810456","text":{"body":"3"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 02:54:17 - Respuesta API WhatsApp (200): {"messaging_product":"whatsapp","contacts":[{"input":"573124858575","wa_id":"573124858575"}],"messages":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNjc4MUY1QTlFQThDRkZDQUEwAA=="}]}
+2025-02-06 02:54:18 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNjc4MUY1QTlFQThDRkZDQUEwAA==","status":"sent","timestamp":"1738810458","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","expiration_timestamp":"1738885560","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 02:54:19 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSNjc4MUY1QTlFQThDRkZDQUEwAA==","status":"read","timestamp":"1738810458","recipient_id":"573124858575","conversation":{"id":"fad926ad7c0eefe6119c3541aeb36260","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-02-06 19:59:55 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggMTZGNjE4OUJEOUEzRUJEMDZENDY2ODM2ODFGOTg4NjYA","timestamp":"1738871993","text":{"body":"Hola"},"type":"text"}]},"field":"messages"}]}]}
+2025-02-06 19:59:55 - Respuesta API WhatsApp (401): {"error":{"message":"Error validating access token: Session has expired on Wednesday, 05-Feb-25 19:00:00 PST. The current time is Thursday, 06-Feb-25 11:59:55 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"AB2HLmsow8KZDmIe_or6CEk"}}
+2025-05-20 23:49:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTc5NUNFQTU2RTIyM0YzMzI4AA==","status":"sent","timestamp":"1747784964","recipient_id":"573124858575","conversation":{"id":"ddc0c9d85935c0fc9e840c442a7c8c9b","expiration_timestamp":"1747871400","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-05-20 23:49:25 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTc5NUNFQTU2RTIyM0YzMzI4AA==","status":"delivered","timestamp":"1747784964","recipient_id":"573124858575","conversation":{"id":"ddc0c9d85935c0fc9e840c442a7c8c9b","origin":{"type":"utility"}},"pricing":{"billable":true,"pricing_model":"CBP","category":"utility"}}]},"field":"messages"}]}]}
+2025-05-20 23:49:32 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"statuses":[{"id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAERgSOTc5NUNFQTU2RTIyM0YzMzI4AA==","status":"read","timestamp":"1747784970","recipient_id":"573124858575"}]},"field":"messages"}]}]}
+2025-05-21 00:06:54 - Mensaje recibido: {"object":"whatsapp_business_account","entry":[{"id":"601652073022221","changes":[{"value":{"messaging_product":"whatsapp","metadata":{"display_phone_number":"15551426898","phone_number_id":"524466370757094"},"contacts":[{"profile":{"name":"Confecciones SALAMANDRA"},"wa_id":"573124858575"}],"messages":[{"from":"573124858575","id":"wamid.HBgMNTczMTI0ODU4NTc1FQIAEhggNDE1RUM4RkVCRkZGNkMyNDc0NzE4REYwNjI1RTVENDUA","timestamp":"1747786013","text":{"body":"Buenas"},"type":"text"}]},"field":"messages"}]}]}
+2025-05-21 00:06:55 - Respuesta API WhatsApp (401): {"error":{"message":"Error validating access token: Session has expired on Wednesday, 05-Feb-25 19:00:00 PST. The current time is Tuesday, 20-May-25 17:06:55 PDT.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"ADbNGLPcpS7jJgJAvmuI49p"}}
