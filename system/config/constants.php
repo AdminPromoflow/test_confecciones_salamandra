@@ -15,4 +15,4 @@ define('VIEWS_PATH', APP_PATH . 'views' . DS);
 define('PUBLIC_PATH', PROJECT_PATH . 'public' . DS);
 
 define('SYSTEM_PATH', PROJECT_PATH . 'system' . DS);
-Logger::log(FUNCTIONS_PATH);
+Logger::log(PROJECT_PATH);
