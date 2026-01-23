@@ -3,7 +3,7 @@
 
   RewriteEngine On
 
-  RewriteBase srv881-files.hstgr.io/8d1c3a12bb370281/files/public_html/public/
+  RewriteBase /public/
   # RewriteBase /salamandra/public/
 
   RewriteCond %{REQUEST_FILENAME} !-d
