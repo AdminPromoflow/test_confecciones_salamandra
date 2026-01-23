@@ -3,7 +3,6 @@
     require_once __DIR__ . '/../logs/Logger.php';
     Logger::init(__DIR__ . '/../logs/app.log');
 
-      Logger::log('1. ');
 
     // Verificar el estado actual de la sesión
     $current_session_status = session_status();
@@ -16,7 +15,7 @@
         error_reporting(E_ALL); // Mostrar todos los errores
         ini_set('display_errors', '1'); // Mostrar errores en pantalla
     }
-   
+
     require_once CONFIG_PATH . 'config.php';
 
     // Configuración de errores según el entorno

@@ -6,7 +6,7 @@ date_default_timezone_set("America/Bogota");
 // Site Name, Project Name Local, Project Name Remote y App Version
 define('SITE_NAME', 'Confecciones Salamandra');
 define('PROJECT_LOCAL', 'localhost/salamandra');
-define('PROJECT_REMOTE', 'www.confeccionessalamandra.com');
+define('PROJECT_REMOTE', 'www.aleinarossui.com');
 define('APP_VERSION', '2.0.0');
 
 if ($_SERVER['SERVER_ADDR'] === '127.0.0.1' || $_SERVER['SERVER_ADDR'] === '::1' || $_SERVER['SERVER_ADDR'] === 'localhost') {
