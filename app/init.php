@@ -16,7 +16,7 @@
         error_reporting(E_ALL); // Mostrar todos los errores
         ini_set('display_errors', '1'); // Mostrar errores en pantalla
     }
-
+   
     require_once CONFIG_PATH . 'config.php';
 
     // Configuración de errores según el entorno
