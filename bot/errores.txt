@@ -1,6 +1,0 @@
-2025-02-05 23:47:34 - No se encontraron detalles para factura: 4541 y cliente ID: 1
-2025-02-05 23:47:34 - No se encontraron registros
-2025-02-06 00:36:11 - Cliente no encontrado con cédula: 79342219
-2025-02-06 00:36:11 - No se encontraron registros
-2025-02-06 00:38:53 - No se encontraron detalles para factura: 4757 y cliente ID: 2303
-2025-02-06 00:38:53 - No se encontraron registros
