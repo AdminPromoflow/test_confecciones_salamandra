@@ -799,11 +799,21 @@ $('#table-cart').on('click', 'a.quitar', function () {
         estadoDisabled = false;
         fechaDisabled = true;
         break;
+      case 5:
+        estadoActual = 'Cancelado';
+        estadoDisabled = true;
+        fechaDisabled = true;
+        break;
+      case 6:
+        estadoActual = 'Retorno';
+        estadoDisabled = true;
+        fechaDisabled = true;
+        break;
       default:
         break;
     }
 
-    // $('#nuevoEstado').prop('disabled', estadoDisabled);
+    $('#nuevoEstado').prop('disabled', estadoDisabled);
     $('#nuevaFechaEntrega').prop('disabled', fechaDisabled);
 
     $('#estadoActual').val(estadoActual);
@@ -833,6 +843,9 @@ $('#table-cart').on('click', 'a.quitar', function () {
       $('#nuevoEstado').append('<option value="2">Listo</option>');
       $('#nuevoEstado').append('<option value="3">Bolsa</option>');
     }
+    else if (estadoActual == 'Cancelado' || estadoActual == 'Retorno') {
+      $('#nuevoEstado').append('<option value="">No editable</option>');
+    }
 
     $('#modal-opciones').modal('show');
   });
@@ -860,6 +873,12 @@ $('#table-cart').on('click', 'a.quitar', function () {
         break;
       case 'Entregado':
         estadoActual = 4;
+        break;
+      case 'Cancelado':
+        estadoActual = 5;
+        break;
+      case 'Retorno':
+        estadoActual = 6;
         break;
       default:
         estadoActual = null; // Handle unexpected state values
