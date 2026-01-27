@@ -626,10 +626,11 @@ function quitarProducto(datosProducto) {
 }
 
 $('#idProducto').on('change', function() {
-  alert("Archivo public/customs/punto.js linea 631");
 
   let idProducto = $(this).val();
   if (idProducto) {
+    alert("1. punto.js public/customs/punto.js linea 631");
+
       obtenerDetallesProducto(idProducto);
   } else {
       $('#infoProducto').hide();
