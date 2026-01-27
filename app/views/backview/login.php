@@ -32,7 +32,7 @@
 
 
 </head>
-<body style="background: rgba(255, 0, 0, .3)">
+<body style="background: rgba(255, 0, 0, 1)">
 
 <!-- [ auth-signin ] start -->
 <div class="auth-wrapper d-flex justify-content-center align-items-center" style="min-height: 100vh;">
