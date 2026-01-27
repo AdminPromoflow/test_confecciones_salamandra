@@ -421,8 +421,9 @@ function obtenerDetallesProducto(idProducto) {
       }
   })
   .fail(function (jqXHR, textStatus, errorThrown) {
-      handleErrorResponse(jqXHR, textStatus, errorThrown);
-      $('#infoProducto').hide();
+    alert("error");
+    //  handleErrorResponse(jqXHR, textStatus, errorThrown);
+    //  $('#infoProducto').hide();
   });
 }
 
