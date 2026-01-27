@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   // Variables
-  //
+  //Buenas
   const notyf = new Notyf();
   const urlController = window.location.pathname;
   const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
