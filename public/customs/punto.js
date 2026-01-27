@@ -384,7 +384,7 @@ function obtenerDetallesProducto(idProducto) {
   //  alert("3. Resputesta punto.js linea 384");
       if (response.success) {
           const { nombre, talla, precio, stock, id_sucursal } = response.respuesta;
-alert("3. Resputesta punto.js linea 384");
+//alert("3. Resputesta punto.js linea 384");
           // Asignar los valores a los elementos del DOM
           $('#idSucursal').val(id_sucursal);
           $('#nombreProducto').text(nombre + ' TALLA ' + talla);
