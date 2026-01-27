@@ -32,6 +32,7 @@
 
 
 </head>
+<body style="background: red">
 
 <!-- [ auth-signin ] start -->
 <div class="auth-wrapper d-flex justify-content-center align-items-center" style="min-height: 100vh;">

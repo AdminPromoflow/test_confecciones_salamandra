@@ -32,8 +32,8 @@
 
 
 </head>
-
-<!-- [ auth-signin ] start -->
+<body>
+	<!-- [ auth-signin ] start -->
 <div class="auth-wrapper btn-primary">
 	<div class="auth-content container">
 		<div class="card">
