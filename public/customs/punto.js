@@ -5,7 +5,7 @@ $(document).ready(function () {
   const notyf = new Notyf();
   const urlController = window.location.pathname;
   const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
-  
+
   let result = {};
 
   // Funciones Generales
@@ -336,7 +336,7 @@ $(document).ready(function () {
 
   function evaluarTipoVenta(total, pagacon) {
     let hayProductosPendientes = false;
-    
+
     $('#table-cart tr').each(function() {
       let estadoBadge = $(this).find('td:nth-child(5) .badge');
       if (estadoBadge.text().trim() === 'Pendiente' || estadoBadge.text().trim() === 'Urgente') {
@@ -344,7 +344,7 @@ $(document).ready(function () {
         return false;
       }
     });
-    
+
     return (hayProductosPendientes || pagacon < total) ? 2 : 1;
   }
 
@@ -457,8 +457,8 @@ function obrtenerStockSucursales(idProducto, idSucursalActual) {
                       // Mostrar sucursales con stock en el nuevo formato
                       sucursalesStock.append(
                           `<li class="list-group-item text-primary">
-                              <i class="fas fa-store-alt"></i> ${datos[i].nombre_sucursal}: 
-                              <strong class="text-bold text-danger">${datos[i].stock + ' ' + unidadTexto}</strong> 
+                              <i class="fas fa-store-alt"></i> ${datos[i].nombre_sucursal}:
+                              <strong class="text-bold text-danger">${datos[i].stock + ' ' + unidadTexto}</strong>
                           </li>`
                       );
 
@@ -628,6 +628,7 @@ function quitarProducto(datosProducto) {
 $('#idProducto').on('change', function() {
   let idProducto = $(this).val();
   if (idProducto) {
+    alert("Archivo public/customs/punto.js linea 631");
       obtenerDetallesProducto(idProducto);
   } else {
       $('#infoProducto').hide();
@@ -940,7 +941,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
     let notaVenta = $('#notaVenta').val();
     let abono = 0;
     let saldo = 0;
-    
+
     // Evaluar el tipo de venta correcto
     let tipoVenta = evaluarTipoVenta(total, pagacon);
 
