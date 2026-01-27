@@ -381,7 +381,7 @@ function obtenerDetallesProducto(idProducto) {
       data: { id_producto: idProducto }
   })
   .done(function (response) {
-    alert("3. Resputesta punto.js linea 384");
+  //  alert("3. Resputesta punto.js linea 384");
       if (response.success) {
           const { nombre, talla, precio, stock, id_sucursal } = response.respuesta;
 
@@ -421,9 +421,8 @@ function obtenerDetallesProducto(idProducto) {
       }
   })
   .fail(function (jqXHR, textStatus, errorThrown) {
-    alert("error");
-    //  handleErrorResponse(jqXHR, textStatus, errorThrown);
-    //  $('#infoProducto').hide();
+      handleErrorResponse(jqXHR, textStatus, errorThrown);
+      $('#infoProducto').hide();
   });
 }
 
