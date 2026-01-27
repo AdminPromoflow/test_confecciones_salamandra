@@ -373,7 +373,7 @@ $(document).ready(function () {
 
 
 function obtenerDetallesProducto(idProducto) {
-  alert("2. /punto.js public/customs/punto.js linea 376 url: " + urlController + '/obtenerInventario');
+//  alert("2. /punto.js public/customs/punto.js linea 376 url: " + urlController + '/obtenerInventario');
 
   $.ajax({
       url: urlController + '/obtenerInventario',
