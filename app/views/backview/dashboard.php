@@ -3,7 +3,7 @@
 </div>
 
 <!-- [ Main Content ] start -->
-<div class="row">
+<div style="background: red!important"  class="row">
     <!-- [ sample-page ] start -->
     <div class="col-sm-12">
         <div class="card">

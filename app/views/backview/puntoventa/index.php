@@ -1,4 +1,4 @@
-<div style="background: red!important"  class="page-wrapper">
+<div  class="page-wrapper">
   <!-- [ Main Content ] start -->
   <div class="row">
     <!-- [ sample-page ] start -->
