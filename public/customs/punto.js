@@ -373,7 +373,6 @@ $(document).ready(function () {
 
 
 function obtenerDetallesProducto(idProducto) {
-  alert("1. Llamando AJAX");
 
   $.ajax({
       url: urlController + '/obtenerInventario',
@@ -381,7 +380,7 @@ function obtenerDetallesProducto(idProducto) {
       data: { id_producto: idProducto }
   })
   .done(function (response) {
-    alert("2. AJAX OK");
+    alert(JSON.stringify(response));
       if (response.success) {
           const { nombre, talla, precio, stock, id_sucursal } = response.respuesta;
 //alert("3. Resputesta punto.js linea 384");
