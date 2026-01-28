@@ -373,7 +373,7 @@ $(document).ready(function () {
 
 
 function obtenerDetallesProducto(idProducto) {
-//  alert("2. /punto.js public/customs/punto.js linea 376 url: " + urlController + '/obtenerInventario');
+  alert("1. Llamando AJAX");
 
   $.ajax({
       url: urlController + '/obtenerInventario',
@@ -381,7 +381,7 @@ function obtenerDetallesProducto(idProducto) {
       data: { id_producto: idProducto }
   })
   .done(function (response) {
-  //  alert("3. Resputesta punto.js linea 384");
+    alert("2. AJAX OK");
       if (response.success) {
           const { nombre, talla, precio, stock, id_sucursal } = response.respuesta;
 //alert("3. Resputesta punto.js linea 384");
@@ -421,6 +421,8 @@ function obtenerDetallesProducto(idProducto) {
       }
   })
   .fail(function (jqXHR, textStatus, errorThrown) {
+    alert("3. AJAX FALLÓ: " + textStatus);
+
       handleErrorResponse(jqXHR, textStatus, errorThrown);
       $('#infoProducto').hide();
   });
