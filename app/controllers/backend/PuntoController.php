@@ -56,7 +56,7 @@ class PuntoController extends PulseController
         'public/assets/plugins/select2/js/select2.full.min.js',
         'public/assets/js/pages/select-custom.js',
         'public/assets/js/pages/form-picker-custom.js',
-        'public/customs/punto.js',
+        'public/customs/punto.js?v=' . time(),
       ],
       'clientes' => $this->clienteModel->obtenerClientes(),
       'idSucursal' => $this->idSucursal,
