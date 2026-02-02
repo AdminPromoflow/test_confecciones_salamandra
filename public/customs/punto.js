@@ -994,6 +994,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
       nota: notaVenta,
       id_cliente: idCliente
     };
+    alert(JSON.stringify(datosVenta));
 
     $.ajax({
       url: urlPath + '/ventas/guardarVenta',
