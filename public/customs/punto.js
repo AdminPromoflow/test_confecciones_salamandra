@@ -380,7 +380,7 @@ function obtenerDetallesProducto(idProducto) {
       data: { id_producto: idProducto }
   })
   .done(function (response) {
-    alert(JSON.stringify(response));
+   // alert(JSON.stringify(response));
       if (response.success) {
           const { nombre, talla, precio, stock, id_sucursal } = response.respuesta;
 //alert("3. Resputesta punto.js linea 384");
@@ -519,6 +519,7 @@ function agregarProductoAlCarrito(datosProducto) {
       showMessage('error', 'La sucursal no está definida o no es válida.');
       return; // Detener la ejecución si id_sucursal no es válido
   }
+  alert(JSON.stringify(datosProducto));
 
   // Enviar los datos al controlador
   $.ajax({
@@ -633,7 +634,7 @@ $('#idProducto').on('change', function() {
 
   let idProducto = $(this).val();
   if (idProducto) {
-    alert("1. punto.js public/customs/punto.js linea 631  (1)");
+   //alert("1. punto.js public/customs/punto.js linea 631  (1)");
 
       obtenerDetallesProducto(idProducto);
   } else {
@@ -994,7 +995,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
       nota: notaVenta,
       id_cliente: idCliente
     };
-    alert(JSON.stringify(datosVenta));
+    //alert(JSON.stringify(datosVenta));
 
     $.ajax({
       url: urlPath + '/ventas/guardarVenta',
