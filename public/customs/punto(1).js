@@ -629,7 +629,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let stock = parseInt($('#cantidadProducto').attr('data-cantidadProducto'));
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
-  alert("Este es el clone: " + stock);
+  alert("Este es el clone: " + JSON.stringify(stock));
   // Validaciones
   if (!idFecha && stock <= 0) {
       showMessage('error', 'No se ha seleccionado una fecha de entrega.');
