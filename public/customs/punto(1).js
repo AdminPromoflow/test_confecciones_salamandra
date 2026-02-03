@@ -5,7 +5,7 @@ $(document).ready(function () {
   const notyf = new Notyf();
   const urlController = window.location.pathname;
   const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
-  
+
   let result = {};
 
   // Funciones Generales
@@ -443,8 +443,8 @@ function obrtenerStockSucursales(idProducto, idSucursalActual) {
                       // Mostrar sucursales con stock en el nuevo formato
                       sucursalesStock.append(
                           `<li class="list-group-item text-primary">
-                              <i class="fas fa-store-alt"></i> ${datos[i].nombre_sucursal}: 
-                              <strong class="text-bold text-danger">${datos[i].stock + ' ' + unidadTexto}</strong> 
+                              <i class="fas fa-store-alt"></i> ${datos[i].nombre_sucursal}:
+                              <strong class="text-bold text-danger">${datos[i].stock + ' ' + unidadTexto}</strong>
                           </li>`
                       );
 
@@ -629,7 +629,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let stock = parseInt($('#cantidadProducto').attr('data-cantidadProducto'));
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
-
+  alert("Este es el clone: " + stock);
   // Validaciones
   if (!idFecha && stock <= 0) {
       showMessage('error', 'No se ha seleccionado una fecha de entrega.');
