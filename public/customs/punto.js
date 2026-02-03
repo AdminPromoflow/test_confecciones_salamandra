@@ -995,9 +995,9 @@ $('#table-cart').on('click', 'a.quitar', function () {
       nota: notaVenta,
       id_cliente: idCliente
     };
-    //alert(JSON.stringify(datosVenta));
+    alert(JSON.stringify(datosVenta));
 
-    $.ajax({
+    /*$.ajax({
       url: urlPath + '/ventas/guardarVenta',
       type: 'POST',
       data: datosVenta
@@ -1024,7 +1024,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
       })
       .fail(function (jqXHR, textStatus, errorThrown) {
         handleErrorResponse(jqXHR, textStatus, errorThrown);
-      });
+      });*/
   });
 
   $('#limpiarVenta').on('click', function () {
