@@ -519,7 +519,7 @@ function agregarProductoAlCarrito(datosProducto) {
       showMessage('error', 'La sucursal no está definida o no es válida.');
       return; // Detener la ejecución si id_sucursal no es válido
   }
-  
+
 
   // Enviar los datos al controlador
  $.ajax({
@@ -651,6 +651,8 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let stock = parseInt($('#cantidadProducto').attr('data-cantidadProducto'));
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
+
+  alert(JSON.stringify(stock));
 
   // Validaciones
   if (!idFecha && stock <= 0) {
