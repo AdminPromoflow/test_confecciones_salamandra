@@ -519,10 +519,10 @@ function agregarProductoAlCarrito(datosProducto) {
       showMessage('error', 'La sucursal no está definida o no es válida.');
       return; // Detener la ejecución si id_sucursal no es válido
   }
-  alert(JSON.stringify(datosProducto));
+  
 
   // Enviar los datos al controlador
- /* $.ajax({
+ $.ajax({
       url: urlPath + '/carrito/agregarProductoCarrito',
       type: 'POST',
       data: datosProducto,
@@ -577,7 +577,7 @@ function agregarProductoAlCarrito(datosProducto) {
       // Manejar errores de la solicitud AJAX
       showMessage('error', 'Error en la solicitud. Por favor, intente nuevamente.');
       console.error('Error en la solicitud:', textStatus, errorThrown);
-  });*/
+  });
 }
 
 function quitarProducto(datosProducto) {
