@@ -671,9 +671,10 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       return;
   }
     
+    alert(JSON.stringify(verificarEstado(cantidadProducto)));
 
   if (verificarEstado(cantidadProducto)) {
-    alert(JSON.stringify(verificarEstado(cantidadProducto)));
+    alert("ENTRAMOS");
       let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
       const datosProducto = {
