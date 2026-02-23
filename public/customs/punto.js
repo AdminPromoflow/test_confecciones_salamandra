@@ -951,6 +951,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
     let abono = 0;
     let saldo = 0;
 
+
     // Evaluar el tipo de venta correcto
     let tipoVenta = evaluarTipoVenta(total, pagacon);
 
@@ -997,7 +998,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
       nota: notaVenta,
       id_cliente: idCliente
     };
-    alert(JSON.stringify(datosVenta));
+    alert(urlPath + '/ventas/guardarVenta');
 
     /*$.ajax({
       url: urlPath + '/ventas/guardarVenta',
