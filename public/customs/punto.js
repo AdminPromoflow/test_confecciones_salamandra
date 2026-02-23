@@ -652,7 +652,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
 
-  alert(JSON.stringify(stock));
+  alert("hola como estás?");
 
   // Validaciones
   if (!idFecha && stock <= 0) {
@@ -951,7 +951,6 @@ $('#table-cart').on('click', 'a.quitar', function () {
     let abono = 0;
     let saldo = 0;
 
-
     // Evaluar el tipo de venta correcto
     let tipoVenta = evaluarTipoVenta(total, pagacon);
 
@@ -998,7 +997,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
       nota: notaVenta,
       id_cliente: idCliente
     };
-    alert(urlPath + '/ventas/guardarVenta');
+    alert(JSON.stringify(datosVenta));
 
     /*$.ajax({
       url: urlPath + '/ventas/guardarVenta',
