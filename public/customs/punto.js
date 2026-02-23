@@ -643,6 +643,7 @@ $('#idProducto').on('change', function() {
 });
 
 $('#agregarAlCarrito').off("click").on("click", function () {
+  alert("1. punto.js public/customs/punto.js linea 646  (1)");
   let idCliente = parseInt($('#idCliente').val());
   let tipoVenta = parseInt($('#tipoVenta').val());
   let idSucursal = parseInt($('#sucursal').attr('data-idSucursal'));
