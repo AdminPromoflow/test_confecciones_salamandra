@@ -326,7 +326,7 @@ $(document).ready(function () {
   }
 
   function verificarEstado(cantidadProducto) {
-    alert(cantidadProducto );
+    
     if (parseInt(cantidadProducto) > 0) {
       estadoProducto = parseInt(2)
     } else {
@@ -671,8 +671,9 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       return;
   }
     
-
+alert(cantidadProducto);
   if (verificarEstado(cantidadProducto)) {
+    
       let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
       const datosProducto = {
