@@ -652,7 +652,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
 
-  alert(cantidadProducto);
+  alert(stock);
 
   // Validaciones
   if (!idFecha && stock <= 0) {
