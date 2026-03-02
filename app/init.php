@@ -6,7 +6,7 @@
 
     // Verificar el estado actual de la sesión
     $current_session_status = session_status();
-    Logger::log("Tu mensaje aquí");
+    //Logger::log("Tu mensaje aquí");
 
     // Load Config
     require_once '../system/config/constants.php';

@@ -326,14 +326,8 @@ $(document).ready(function () {
   }
 
   function verificarEstado(cantidadProducto) {
-    alert("cantidadProducto: " + cantidadProducto); 
-    if (parseInt(cantidadProducto) > 0) {
-      estadoProducto = parseInt(2)
-    } else {
-      estadoProducto = parseInt(0)
-    }
-    return result
-  };
+  return parseInt(cantidadProducto, 10) > 0 ? 2 : 0;
+}
 
   function evaluarTipoVenta(total, pagacon) {
     let hayProductosPendientes = false;
@@ -653,7 +647,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
 
-  alert(stock);
+  
 
   // Validaciones
   if (!idFecha && stock <= 0) {
@@ -670,7 +664,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       showMessage('error', 'No se ha seleccionado un cliente.');
       return;
   }
-
+alert(verificarEstado(cantidadProducto));
   if (verificarEstado(cantidadProducto)) {
       let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
