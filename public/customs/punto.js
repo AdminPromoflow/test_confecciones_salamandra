@@ -326,8 +326,14 @@ $(document).ready(function () {
   }
 
   function verificarEstado(cantidadProducto) {
-  return parseInt(cantidadProducto, 10) > 0 ? 2 : 0;
-}
+    
+    if (parseInt(cantidadProducto) > 0) {
+      estadoProducto = parseInt(2)
+    } else {
+      estadoProducto = parseInt(0)
+    }
+    return result;
+  };
 
   function evaluarTipoVenta(total, pagacon) {
     let hayProductosPendientes = false;
@@ -664,8 +670,8 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       showMessage('error', 'No se ha seleccionado un cliente.');
       return;
   }
-alert(verificarEstado(cantidadProducto));
-  if (verificarEstado(cantidadProducto)) {
+
+  if (verificarEstado(cantidadProducto)) {  
       let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
       const datosProducto = {
