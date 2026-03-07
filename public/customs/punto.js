@@ -325,9 +325,17 @@ $(document).ready(function () {
       });
   }
 
+
+  /**
+   * PRIMER CASO
+   * cantidadProducto = Nan
+   * Ejecuta el Else: estadoProducto = 0
+   * return result  = {}
+   * 
+   */
   function verificarEstado(cantidadProducto) {
 
-    alert("cantidadProducto: " + cantidadProducto);
+    //alert("cantidadProducto: " + cantidadProducto);
     
     if (parseInt(cantidadProducto) > 0) {
       estadoProducto = parseInt(2)
@@ -644,7 +652,7 @@ $('#idProducto').on('change', function() {
       $('#infoProducto').hide();
   }
 });
-
+//1/ Captura datos
 $('#agregarAlCarrito').off("click").on("click", function () {
   let idCliente = parseInt($('#idCliente').val());
   let tipoVenta = parseInt($('#tipoVenta').val());
@@ -655,9 +663,9 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
 
-  
+    alert("tipo de venta" + tipoVenta)
 
-  // Validaciones
+  // 2. Validaciones
   if (!idFecha && stock <= 0) {
       showMessage('error', 'No se ha seleccionado una fecha de entrega.');
       return;
