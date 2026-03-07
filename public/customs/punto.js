@@ -325,13 +325,22 @@ $(document).ready(function () {
       });
   }
 
-  function verificarEstado(cantidadProducto) {
+function verificarEstado(cantidadProducto, stock) {
+    
     if (parseInt(cantidadProducto) > 0) {
-      estadoProducto = parseInt(2)
+      estadoProducto = parseInt(2);
+      return true;
+
     } else {
-      estadoProducto = parseInt(0)
+      if(parseInt(stock) > 0){
+         return false;
+      }
+      else{
+        estadoProducto = parseInt(0);
+        return true;
+      }
     }
-    return result
+    
   };
 
   function evaluarTipoVenta(total, pagacon) {
