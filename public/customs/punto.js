@@ -1,13 +1,12 @@
 $(document).ready(function () {
 
   // Variables
-  //Buenas
+  //
   const notyf = new Notyf();
   const urlController = window.location.pathname;
   const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
-
+  
   let result = {};
-  let estadoProducto;
 
   // Funciones Generales
   //
@@ -326,35 +325,18 @@ $(document).ready(function () {
       });
   }
 
-
-  /**
-   * PRIMER CASO
-   * cantidadProducto = Nan
-   * Ejecuta el Else: estadoProducto = 0
-   * return result  = {}
-   * 
-   */
-  function verificarEstado(cantidadProducto, stock) {
-    
+  function verificarEstado(cantidadProducto) {
     if (parseInt(cantidadProducto) > 0) {
-      estadoProducto = parseInt(2);
-      return true;
-
+      estadoProducto = parseInt(2)
     } else {
-      if(parseInt(stock) > 0){
-         return false;
-      }
-      else{
-        estadoProducto = parseInt(0);
-        return true;
-      }
+      estadoProducto = parseInt(0)
     }
-    
+    return result
   };
 
   function evaluarTipoVenta(total, pagacon) {
     let hayProductosPendientes = false;
-
+    
     $('#table-cart tr').each(function() {
       let estadoBadge = $(this).find('td:nth-child(5) .badge');
       if (estadoBadge.text().trim() === 'Pendiente' || estadoBadge.text().trim() === 'Urgente') {
@@ -362,7 +344,7 @@ $(document).ready(function () {
         return false;
       }
     });
-
+    
     return (hayProductosPendientes || pagacon < total) ? 2 : 1;
   }
 
@@ -391,17 +373,15 @@ $(document).ready(function () {
 
 
 function obtenerDetallesProducto(idProducto) {
-
   $.ajax({
       url: urlController + '/obtenerInventario',
       type: 'POST',
       data: { id_producto: idProducto }
   })
   .done(function (response) {
-   // alert(JSON.stringify(response));
       if (response.success) {
           const { nombre, talla, precio, stock, id_sucursal } = response.respuesta;
-//alert("3. Resputesta punto.js linea 384");
+
           // Asignar los valores a los elementos del DOM
           $('#idSucursal').val(id_sucursal);
           $('#nombreProducto').text(nombre + ' TALLA ' + talla);
@@ -438,8 +418,6 @@ function obtenerDetallesProducto(idProducto) {
       }
   })
   .fail(function (jqXHR, textStatus, errorThrown) {
-    alert("3. AJAX FALLÓ: " + textStatus);
-
       handleErrorResponse(jqXHR, textStatus, errorThrown);
       $('#infoProducto').hide();
   });
@@ -479,8 +457,8 @@ function obrtenerStockSucursales(idProducto, idSucursalActual) {
                       // Mostrar sucursales con stock en el nuevo formato
                       sucursalesStock.append(
                           `<li class="list-group-item text-primary">
-                              <i class="fas fa-store-alt"></i> ${datos[i].nombre_sucursal}:
-                              <strong class="text-bold text-danger">${datos[i].stock + ' ' + unidadTexto}</strong>
+                              <i class="fas fa-store-alt"></i> ${datos[i].nombre_sucursal}: 
+                              <strong class="text-bold text-danger">${datos[i].stock + ' ' + unidadTexto}</strong> 
                           </li>`
                       );
 
@@ -538,9 +516,8 @@ function agregarProductoAlCarrito(datosProducto) {
       return; // Detener la ejecución si id_sucursal no es válido
   }
 
-
   // Enviar los datos al controlador
- $.ajax({
+  $.ajax({
       url: urlPath + '/carrito/agregarProductoCarrito',
       type: 'POST',
       data: datosProducto,
@@ -649,20 +626,17 @@ function quitarProducto(datosProducto) {
 }
 
 $('#idProducto').on('change', function() {
-
   let idProducto = $(this).val();
   if (idProducto) {
-   //alert("1. punto.js public/customs/punto.js linea 631  (1)");
-
       obtenerDetallesProducto(idProducto);
   } else {
       $('#infoProducto').hide();
   }
 });
-//1/ Captura datos
+
 $('#agregarAlCarrito').off("click").on("click", function () {
   let idCliente = parseInt($('#idCliente').val());
-  let tipoVenta = parseInt($('#tipoVenta').val());   // Pone 2 en adblbb12 
+  let tipoVenta = parseInt($('#tipoVenta').val());
   let idSucursal = parseInt($('#sucursal').attr('data-idSucursal'));
   let idProducto = $('#idProducto').val();
   let cantidadProducto = parseInt($('#cantidadProducto').text()); // Obtener la cantidad actual del DOM
@@ -670,8 +644,7 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
 
-
-  // 2. Validaciones
+  // Validaciones
   if (!idFecha && stock <= 0) {
       showMessage('error', 'No se ha seleccionado una fecha de entrega.');
       return;
@@ -687,8 +660,8 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       return;
   }
 
-  if (verificarEstado(cantidadProducto, stock)) {  
-      //let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
+  if (verificarEstado(cantidadProducto)) {
+      let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
       const datosProducto = {
           id_sucursal: idSucursal,
@@ -826,21 +799,11 @@ $('#table-cart').on('click', 'a.quitar', function () {
         estadoDisabled = false;
         fechaDisabled = true;
         break;
-      case 5:
-        estadoActual = 'Cancelado';
-        estadoDisabled = true;
-        fechaDisabled = true;
-        break;
-      case 6:
-        estadoActual = 'Retorno';
-        estadoDisabled = true;
-        fechaDisabled = true;
-        break;
       default:
         break;
     }
 
-    $('#nuevoEstado').prop('disabled', estadoDisabled);
+    // $('#nuevoEstado').prop('disabled', estadoDisabled);
     $('#nuevaFechaEntrega').prop('disabled', fechaDisabled);
 
     $('#estadoActual').val(estadoActual);
@@ -870,9 +833,6 @@ $('#table-cart').on('click', 'a.quitar', function () {
       $('#nuevoEstado').append('<option value="2">Listo</option>');
       $('#nuevoEstado').append('<option value="3">Bolsa</option>');
     }
-    else if (estadoActual == 'Cancelado' || estadoActual == 'Retorno') {
-      $('#nuevoEstado').append('<option value="">No editable</option>');
-    }
 
     $('#modal-opciones').modal('show');
   });
@@ -900,12 +860,6 @@ $('#table-cart').on('click', 'a.quitar', function () {
         break;
       case 'Entregado':
         estadoActual = 4;
-        break;
-      case 'Cancelado':
-        estadoActual = 5;
-        break;
-      case 'Retorno':
-        estadoActual = 6;
         break;
       default:
         estadoActual = null; // Handle unexpected state values
@@ -967,7 +921,7 @@ $('#table-cart').on('click', 'a.quitar', function () {
     let notaVenta = $('#notaVenta').val();
     let abono = 0;
     let saldo = 0;
-
+    
     // Evaluar el tipo de venta correcto
     let tipoVenta = evaluarTipoVenta(total, pagacon);
 
@@ -1014,7 +968,6 @@ $('#table-cart').on('click', 'a.quitar', function () {
       nota: notaVenta,
       id_cliente: idCliente
     };
-    alert(JSON.stringify(datosVenta));
 
     $.ajax({
       url: urlPath + '/ventas/guardarVenta',
