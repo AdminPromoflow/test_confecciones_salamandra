@@ -326,6 +326,8 @@ $(document).ready(function () {
   }
 
   function verificarEstado(cantidadProducto) {
+
+    alert("cantidadProducto: " + cantidadProducto);
     
     if (parseInt(cantidadProducto) > 0) {
       estadoProducto = parseInt(2)
