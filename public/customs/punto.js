@@ -7,6 +7,7 @@ $(document).ready(function () {
   const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
 
   let result = {};
+  let estadoProducto;
 
   // Funciones Generales
   //
@@ -685,9 +686,9 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       showMessage('error', 'No se ha seleccionado un cliente.');
       return;
   }
-  
+
   if (verificarEstado(cantidadProducto, stock)) {  
-      let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
+      //let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
       const datosProducto = {
           id_sucursal: idSucursal,
