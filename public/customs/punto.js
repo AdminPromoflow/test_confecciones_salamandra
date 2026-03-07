@@ -333,16 +333,22 @@ $(document).ready(function () {
    * return result  = {}
    * 
    */
-  function verificarEstado(cantidadProducto) {
-
-    //alert("cantidadProducto: " + cantidadProducto);
+  function verificarEstado(cantidadProducto, stock) {
     
     if (parseInt(cantidadProducto) > 0) {
-      estadoProducto = parseInt(2)
+      estadoProducto = parseInt(2);
+      return true;
+
     } else {
-      estadoProducto = parseInt(0)
+      if(parseInt(stock) > 0){
+         return false;
+      }
+      else{
+        estadoProducto = parseInt(0);
+        return true;
+      }
     }
-    return result;
+    
   };
 
   function evaluarTipoVenta(total, pagacon) {
@@ -655,7 +661,7 @@ $('#idProducto').on('change', function() {
 //1/ Captura datos
 $('#agregarAlCarrito').off("click").on("click", function () {
   let idCliente = parseInt($('#idCliente').val());
-  let tipoVenta = parseInt($('#tipoVenta').val());
+  let tipoVenta = parseInt($('#tipoVenta').val());   // Pone 2 en adblbb12 
   let idSucursal = parseInt($('#sucursal').attr('data-idSucursal'));
   let idProducto = $('#idProducto').val();
   let cantidadProducto = parseInt($('#cantidadProducto').text()); // Obtener la cantidad actual del DOM
@@ -663,7 +669,6 @@ $('#agregarAlCarrito').off("click").on("click", function () {
   let precioProducto = parseInt($('#precioProducto').attr('data-precioProducto'));
   let idFecha = $('#fechaEntrega').val();
 
-    alert("tipo de venta" + tipoVenta)
 
   // 2. Validaciones
   if (!idFecha && stock <= 0) {
@@ -680,8 +685,8 @@ $('#agregarAlCarrito').off("click").on("click", function () {
       showMessage('error', 'No se ha seleccionado un cliente.');
       return;
   }
-
-  if (verificarEstado(cantidadProducto)) {  
+  
+  if (verificarEstado(cantidadProducto, stock)) {  
       let estadoProducto = (stock > 0) ? 2 : 0; // Definir el estado del producto
 
       const datosProducto = {
