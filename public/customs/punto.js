@@ -685,6 +685,16 @@ $('#agregarAlCarrito').off("click").on("click", function () {
           id_cliente: idCliente
       };
 
+      alert(
+        "idSucursal: " + idSucursal +
+        " | idProducto: " + idProducto +
+        " | stock: " + stock +
+        " | cantidadProducto: " + cantidadProducto +
+        " | precioProducto: " + precioProducto +
+        " | estadoProducto: " + estadoProducto +
+        " | idFecha: " + idFecha +
+        " | idCliente: " + idCliente
+      );
       // Agregar el producto al carrito
       agregarProductoAlCarrito(datosProducto);
   }
