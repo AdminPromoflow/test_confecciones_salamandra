@@ -98,7 +98,7 @@ class CarritoController extends PulseController
     // Asignar el id_usuario y validar la fecha de entrega
     $postData['id_usuario'] = $this->idUsuario;
     $postData['fecha_entrega'] = !empty($postData['fecha_entrega']) ? $postData['fecha_entrega'] : null;
-
+    Logger::log("Hola Cómo estás?");
     try {
         
         // Guardar el producto en el carrito
