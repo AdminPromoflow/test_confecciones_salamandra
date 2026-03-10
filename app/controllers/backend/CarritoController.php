@@ -109,6 +109,8 @@ class CarritoController extends PulseController
             Logger::log($postData['estado']);
 
         if ($postData['estado'] > 1) {
+                        Logger::log("Esta entrando donde no es");
+
             // Restar en el inventario 1 si el producto no tiene estado pendiente o urgente
             $response = $this->inventarioProductoModel->restamosInventario($postData['id_producto'], $postData['id_sucursal']);
         }
