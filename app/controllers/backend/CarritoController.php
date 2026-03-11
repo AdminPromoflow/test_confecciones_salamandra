@@ -106,10 +106,8 @@ class CarritoController extends PulseController
         if (!$guardarCarrito) {
             throw new Exception('No se pudo guardar el producto en el carrito.');
         }
-            Logger::log($postData['estado']);
 
         if ($postData['estado'] > 1) {
-                        Logger::log("Esta entrando donde no es");
 
             // Restar en el inventario 1 si el producto no tiene estado pendiente o urgente
             $response = $this->inventarioProductoModel->restamosInventario($postData['id_producto'], $postData['id_sucursal']);
@@ -147,10 +145,11 @@ class CarritoController extends PulseController
 
         $carrito = $this->carritoModel->obtenerCarrito($postData['id_cliente']);
 
-        foreach ($carrito as $detalle) {
-            $respuesta = $this->carritoModel->quitarProducto($detalle->id_carrito);
-            $this->inventarioProductoModel->sumamosInventario($detalle->id_producto, $this->idSucursal);
-        }
+    foreach ($carrito as $detalle) {
+        $respuesta = $this->carritoModel->quitarProducto($detalle->id_carrito);
+        Logger::log("Producto ID: " . $detalle->id_producto . " - Estado: " . $detalle->estado);
+        $this->inventarioProductoModel->sumamosInventario($detalle->id_producto, $this->idSucursal);
+    }
 
         $this->function->jsonResponse('respuesta', $respuesta);
     }
