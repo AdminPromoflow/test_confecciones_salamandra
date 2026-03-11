@@ -147,8 +147,10 @@ class CarritoController extends PulseController
 
     foreach ($carrito as $detalle) {
         $respuesta = $this->carritoModel->quitarProducto($detalle->id_carrito);
-        Logger::log("Producto ID: " . $detalle->id_producto . " - Estado: " . $detalle->estado);
+        //Logger::log("Producto ID: " . $detalle->id_producto . " - Estado: " . $detalle->estado);
+        if ($detalle->estado > 1) {
         $this->inventarioProductoModel->sumamosInventario($detalle->id_producto, $this->idSucursal);
+    }
     }
 
         $this->function->jsonResponse('respuesta', $respuesta);
