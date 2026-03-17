@@ -166,6 +166,8 @@ class DetalleventaController extends PulseController
         $valorProducto = $objeto['precio'];
         $objeto['nota'] = 'Venta ajustada por cancelación/devolución de producto.';
 
+        Logger::log("Estado detalle: " . $objeto['estado_detalle'] . " - Nuevo estado: " . $objeto['nuevo_estado']);
+
         if ($objeto['nuevo_estado'] == 5) {  // Cancelar
             if (in_array($objeto['estado_detalle'], [0, 1])) {
                 $objeto['descuento'] += $valorProducto;
