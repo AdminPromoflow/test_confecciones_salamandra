@@ -122,6 +122,8 @@ class DetalleventaController extends PulseController
                 4 => [6]  // Desde estado 4 puede ir a 6
             ];
 
+
+    
             // Verificar si la transición es permitida
             if (isset($transicionesAdministrador[$objeto['estado_detalle']]) &&
                     in_array($objeto['nuevo_estado'], $transicionesAdministrador[$objeto['estado_detalle']])) {
