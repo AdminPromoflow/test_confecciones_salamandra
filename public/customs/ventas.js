@@ -404,7 +404,7 @@ $(document).ready(function () {
                 $('#modal-actualizarEstado').modal('hide');
     
                 // Si se cancela o retorna, actualizar el inventario
-                if (nuevoEstado == 5 || nuevoEstado == 6) {
+                if ( nuevoEstado == 6) {
                     actualizarInventario(dataVenta);
                 }
             } else {
