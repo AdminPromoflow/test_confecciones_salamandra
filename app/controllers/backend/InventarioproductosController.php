@@ -62,7 +62,7 @@ class InventarioproductosController extends PulseController
 
     public function actualizarStock()
     {
-        Logger::log("Actualizando stock. hahahahahhah");
+       
         $postData = $this->function->method('POST', TRUE);
         $response = $this->inventarioModel->sumamosInventario($postData['id_producto'], $postData['id_sucursal']);
         return $this->function->jsonResponse('respuesta', $response);

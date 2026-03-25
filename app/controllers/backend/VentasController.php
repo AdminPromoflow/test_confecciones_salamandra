@@ -46,7 +46,7 @@ class VentasController extends PulseController
                 'public/assets/plugins/select2/js/select2.full.min.js',
                 'public/assets/js/pages/datatables-custom.js',
                 'public/assets/js/pages/select-custom.js',
-                'public/customs/ventas.js'
+                'public/customs/ventas.js?v=' . filemtime(PUBLIC_PATH . 'customs' . DS . 'ventas.js')
             ],
             'clientes' => $this->clienteModel->obtenerClientes()
         ];

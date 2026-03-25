@@ -451,7 +451,7 @@ $(document).ready(function () {
 
     // Función para actualizar el inventario
     function actualizarInventario(dataVenta) {
-        alert("Actualizando inventario");
+        // alert("Actualizando inventario");
         $.ajax({
             url: urlPath + '/inventarioproductos/actualizarStock',
             method: 'POST',
