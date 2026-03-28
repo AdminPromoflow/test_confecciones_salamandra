@@ -84,6 +84,7 @@ $(document).ready(function () {
             data: { id_venta: idVenta }
         })
             .done(function (response) {
+                alert(JSON.stringify(response));
                 if (response.success) {
 
                     $('#enlaceContainer').empty();
