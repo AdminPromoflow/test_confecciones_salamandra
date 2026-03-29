@@ -188,6 +188,24 @@
                                     </table>
                                 </div>
                                 <div class="mb-3">
+                                    <h5>Abonos</h5>
+                                    <table class="table text-sm mb-0 table-striped table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th class="text-right">Valor</th>
+                                                <th class="text-right">Medio de pago</th>
+                                                <th class="text-right">Fecha</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tabla-abonos">
+                                            <tr>
+                                                <td colspan="4" class="text-center">Sin abonos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="mb-3">
                                     <h5>Nota adicional</h5>
                                     <table class="table text-sm mb-0 table-striped table-sm">
                                         <tbody>
