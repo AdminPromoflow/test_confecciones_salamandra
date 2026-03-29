@@ -20,6 +20,27 @@ $(document).ready(function () {
         });
     }
 
+    function renderResumenAbonos(abonos, venta) {
+        const $total = $('#total-abonos');
+        const $saldoPendiente = $('#saldo-pendiente');
+
+        if ($total.length === 0 || $saldoPendiente.length === 0) {
+            return;
+        }
+
+        let totalAbonos = 0;
+        if (abonos && abonos.length) {
+            $.each(abonos, function (_, abono) {
+                totalAbonos += (parseFloat(abono.valor) || 0);
+            });
+        }
+
+        const saldo = venta ? (parseFloat(venta.saldo) || 0) : 0;
+
+        $total.text(formatCurrency(totalAbonos));
+        $saldoPendiente.text(formatCurrency(saldo));
+    }
+
     function formatDate(dateString, time) {
         let date = new Date(dateString);
         let day = date.getDate();
@@ -102,6 +123,7 @@ $(document).ready(function () {
 
                     vistaVenta(venta);
                     renderAbonos(abonos || []);
+                    renderResumenAbonos(abonos || [], venta);
                     obtenerDetalle(venta.id_venta);
 
                     $('html, body').animate({

@@ -204,6 +204,18 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <table class="table text-sm mb-0 table-striped table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Total abonos:</th>
+                                                <td id="total-abonos" class="text-right"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Saldo pendiente:</th>
+                                                <td id="saldo-pendiente" class="text-right text-danger"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="mb-3">
                                     <h5>Nota adicional</h5>
