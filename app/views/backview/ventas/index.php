@@ -207,7 +207,11 @@
                                     <table class="table text-sm mb-0 table-striped table-sm">
                                         <tbody>
                                             <tr>
-                                                <th scope="row">Total abonos:</th>
+                                                <th scope="row">Gran total:</th>
+                                                <td id="gran-total" class="text-right"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Abono:</th>
                                                 <td id="total-abonos" class="text-right"></td>
                                             </tr>
                                             <tr>

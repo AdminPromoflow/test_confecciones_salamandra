@@ -21,23 +21,20 @@ $(document).ready(function () {
     }
 
     function renderResumenAbonos(abonos, venta) {
-        const $total = $('#total-abonos');
+        const $granTotal = $('#gran-total');
+        const $abono = $('#total-abonos');
         const $saldoPendiente = $('#saldo-pendiente');
 
-        if ($total.length === 0 || $saldoPendiente.length === 0) {
+        if ($granTotal.length === 0 || $abono.length === 0 || $saldoPendiente.length === 0) {
             return;
         }
 
-        let totalAbonos = 0;
-        if (abonos && abonos.length) {
-            $.each(abonos, function (_, abono) {
-                totalAbonos += (parseFloat(abono.valor) || 0);
-            });
-        }
-
+        const granTotal = venta ? (parseFloat(venta.total) || 0) : 0;
+        const abonoTotal = venta ? (parseFloat(venta.abono) || 0) : 0;
         const saldo = venta ? (parseFloat(venta.saldo) || 0) : 0;
 
-        $total.text(formatCurrency(totalAbonos));
+        $granTotal.text(formatCurrency(granTotal));
+        $abono.text(formatCurrency(abonoTotal));
         $saldoPendiente.text(formatCurrency(saldo));
     }
 
