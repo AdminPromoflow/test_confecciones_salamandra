@@ -63,7 +63,12 @@ class VentasController extends PulseController
     public function obtenerVentaById()
     {
         $postData = $this->function->method('POST', TRUE);
-        $response = $this->ventaModel->obtenerVentaById($postData['id_venta']);
+        $venta = $this->ventaModel->obtenerVentaById($postData['id_venta']);
+        $abonos = $venta ? $this->abonoModel->obtenerAbonoById($postData['id_venta']) : false;
+        $response = [
+            'venta' => $venta,
+            'abonos' => $abonos
+        ];
         return $this->function->jsonResponse('respuesta', $response);
     }
 

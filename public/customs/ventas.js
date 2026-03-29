@@ -84,15 +84,25 @@ $(document).ready(function () {
             data: { id_venta: idVenta }
         })
             .done(function (response) {
-                alert(JSON.stringify(response));
                 if (response.success) {
 
                     $('#enlaceContainer').empty();
 
-                    dataVenta.id_sucursal = response.respuesta.id_sucursal;
+                    const venta = response.respuesta ? response.respuesta.venta : null;
+                    const abonos = response.respuesta ? response.respuesta.abonos : null;
 
-                    vistaVenta(response.respuesta);
-                    obtenerDetalle(response.respuesta.id_venta);
+                    if (!venta) {
+                        showMessage('error', 'No se encontró la venta buscada.');
+                        $('#numero-venta').val('');
+                        renderAbonos([]);
+                        return;
+                    }
+
+                    dataVenta.id_sucursal = venta.id_sucursal;
+
+                    vistaVenta(venta);
+                    renderAbonos(abonos || []);
+                    obtenerDetalle(venta.id_venta);
 
                     $('html, body').animate({
                         scrollTop: $('#contenedor-venta').offset().top
@@ -100,11 +110,54 @@ $(document).ready(function () {
                 } else {
                     showMessage('error', 'No se encontró la venta buscada.');
                     $('#numero-venta').val('');
+                    renderAbonos([]);
                 }
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
                 console.error('Error en la solicitud AJAX:', textStatus, errorThrown);
             });
+    }
+
+    function renderAbonos(abonos) {
+        const $tbody = $('#tabla-abonos');
+        if ($tbody.length === 0) {
+            return;
+        }
+
+        $tbody.empty();
+
+        if (!abonos || abonos.length === 0) {
+            $tbody.append('<tr><td colspan="4" class="text-center">Sin abonos</td></tr>');
+            return;
+        }
+
+        $.each(abonos, function (index, abono) {
+            const valor = parseFloat(abono.valor) || 0;
+            const medio = mapMedioPago(abono.mediopago);
+            const fecha = formatDate(abono.registro, true);
+
+            $tbody.append(
+                '<tr>' +
+                '<td>' + (index + 1) + '</td>' +
+                '<td class="text-right">' + formatCurrency(valor) + '</td>' +
+                '<td class="text-right">' + medio + '</td>' +
+                '<td class="text-right">' + fecha + '</td>' +
+                '</tr>'
+            );
+        });
+    }
+
+    function mapMedioPago(mediopago) {
+        switch (parseInt(mediopago)) {
+            case 1:
+                return 'Efectivo';
+            case 2:
+                return 'Nequi';
+            case 3:
+                return 'Daviplata';
+            default:
+                return 'N/A';
+        }
     }
 
     function buscarCliente(idCliente) {
