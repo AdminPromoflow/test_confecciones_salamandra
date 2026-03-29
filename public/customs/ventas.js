@@ -134,14 +134,16 @@ $(document).ready(function () {
         $.each(abonos, function (index, abono) {
             const valor = parseFloat(abono.valor) || 0;
             const medio = mapMedioPago(abono.mediopago);
-            const fecha = formatDate(abono.registro, true);
+            const fecha = formatDate(abono.registro, false);
+            const hora = abono.registro ? (abono.registro.split(' ')[1] || '') : '';
+            const fechaHoraHtml = hora ? (fecha + '<br>' + hora) : fecha;
 
             $tbody.append(
                 '<tr>' +
                 '<td>' + (index + 1) + '</td>' +
                 '<td class="text-right">' + formatCurrency(valor) + '</td>' +
                 '<td class="text-right">' + medio + '</td>' +
-                '<td class="text-right">' + fecha + '</td>' +
+                '<td class="text-right">' + fechaHoraHtml + '</td>' +
                 '</tr>'
             );
         });
