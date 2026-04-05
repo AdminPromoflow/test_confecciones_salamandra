@@ -168,6 +168,19 @@ $(document).ready(function () {
         });
     }
 
+    function mapTipoVenta(mediopago) {
+        switch (parseInt(mediopago)) {
+            case 0:
+                return 'Efectivo';
+            case 1:
+                return 'Nequi';
+            case 2:
+                return 'Daviplata';
+            default:
+                return 'N/A';
+        }
+    }
+
     function mapMedioPago(mediopago) {
         switch (parseInt(mediopago)) {
             case 1:
@@ -216,7 +229,7 @@ $(document).ready(function () {
         $('#fecha-venta').text(formatDate(resultado.registro, false));
         $('#factura-venta').text(resultado.id_venta);
         $('#sucursal-venta').text('Sucursal ' + resultado.nombre_sucursal);
-        $('#tipo-venta').text(resultado.tipoventa == 1 ? 'Venta' : 'Apartado');
+        $('#tipo-venta').text(mapTipoVenta(resultado.mediopago));
         
         // Estado de la venta
         switch (parseInt(resultado.estado)) {
