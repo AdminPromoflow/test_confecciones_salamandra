@@ -140,8 +140,7 @@ class VentasController extends PulseController
     {
         $data = [
             'venta' => $this->ventaModel->obtenerVentaById($id_venta),
-            'detalle_venta' => $this->dealleventaModel->obtenerDetalleByIdVenta($id_venta),
-            'abonos' => $this->abonoModel->obtenerAbonoById($id_venta)
+            'detalle_venta' => $this->dealleventaModel->obtenerDetalleByIdVenta($id_venta)
         ];
 
         $this->view('backview/impresiones/tiquet', $data);
