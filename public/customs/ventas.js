@@ -309,7 +309,7 @@ $(document).ready(function () {
                     // Crear el enlace con el ID de venta
                     let enlace = $('<a>', {
                         class: 'btn btn-outline-dark btn-sm',
-                        href: 'https://www.confeccionessalamandra.com/backend/ventas/imprimirTiquet/' + idVenta,
+                        href: 'https://www.aleinarossui.com/backend/ventas/imprimirTiquet/' + idVenta,
                         html: '<i class="feather icon-printer"></i> Imprimir factura',
                         target: '_blank'
                     });
