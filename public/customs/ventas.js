@@ -152,7 +152,7 @@ $(document).ready(function () {
 
         $.each(abonos, function (index, abono) {
             const valor = parseFloat(abono.valor) || 0;
-            const medio = mapMedioPago(abono.mediopago);
+            const medio = mapTipoVenta(abono.mediopago);
             const fecha = formatDate(abono.registro, false);
             const hora = abono.registro ? (abono.registro.split(' ')[1] || '') : '';
             const fechaHoraHtml = hora ? (fecha + '<br>' + hora) : fecha;
@@ -181,18 +181,7 @@ $(document).ready(function () {
         }
     }
 
-    function mapMedioPago(mediopago) {
-        switch (parseInt(mediopago)) {
-            case 1:
-                return 'Efectivo';
-            case 2:
-                return 'Nequi';
-            case 3:
-                return 'Daviplata';
-            default:
-                return 'N/A';
-        }
-    }
+
 
     function buscarCliente(idCliente) {
         $('#numero-venta').val('');
