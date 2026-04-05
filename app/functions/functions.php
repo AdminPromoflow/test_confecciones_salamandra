@@ -138,3 +138,17 @@ function fecha_sin_hora($string)
 
     return $semana . ' ' . $dia . '/' . $mes . '/' . $ano;
 }
+
+function obtenerMedioPago($mediopago)
+{
+    switch (intval($mediopago)) {
+        case 0:
+            return 'Efectivo';
+        case 1:
+            return 'Nequi';
+        case 2:
+            return 'Daviplata';
+        default:
+            return 'N/A';
+    }
+}
