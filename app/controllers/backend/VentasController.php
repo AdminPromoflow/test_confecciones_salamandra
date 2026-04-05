@@ -144,6 +144,8 @@ class VentasController extends PulseController
             'abonos' => $this->abonoModel->obtenerAbonoById($id_venta)
         ];
 
+        Logger::log("Abonos encontrados para venta $id_venta: " . json_encode($data['abonos']));
+
         $this->view('backview/impresiones/tiquet', $data);
     }
 }
