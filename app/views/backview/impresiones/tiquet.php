@@ -170,20 +170,32 @@
                         <?php if ($venta->pagacon >= $venta->total) : ?>
                             <p class="parrafo">Efectivo</p>
                         <?php else : ?>
-                            <?php if ($venta->descuento > 0) : ?>
-                                <p class="parrafo" style="margin-bottom: 5px;">Descuento</p>
+                            <?php if (!empty($abonos)) : ?>
+                                <?php foreach ($abonos as $abono) : ?>
+                                    <p class="parrafo">Abono (<?= obtenerMedioPago($abono->mediopago) ?>)</p>
+                                <?php endforeach; ?>
+                            <?php else : ?>
+                                <?php if ($venta->descuento > 0) : ?>
+                                    <p class="parrafo" style="margin-bottom: 5px;">Descuento</p>
+                                <?php endif ?>
+                                <p class="parrafo">Abono</p>
                             <?php endif ?>
-                            <p class="parrafo">Abono</p>
                         <?php endif ?>
                     </td>
                     <td style="text-align: right;">
                         <?php if ($venta->pagacon > 0) : ?>
                             <p class="parrafo"><?= formatearMoneda($venta->pagacon) ?></p>
                         <?php else : ?>
-                            <?php if ($venta->descuento > 0) : ?>
-                                <p class="parrafo" style="margin-bottom: 5px;">- <?= formatearMoneda($venta->descuento) ?></p>
+                            <?php if (!empty($abonos)) : ?>
+                                <?php foreach ($abonos as $abono) : ?>
+                                    <p class="parrafo"><?= formatearMoneda($abono->valor) ?></p>
+                                <?php endforeach; ?>
+                            <?php else : ?>
+                                <?php if ($venta->descuento > 0) : ?>
+                                    <p class="parrafo" style="margin-bottom: 5px;">- <?= formatearMoneda($venta->descuento) ?></p>
+                                <?php endif ?>
+                                <p class="parrafo"><?= formatearMoneda($venta->abono) ?></p>
                             <?php endif ?>
-                            <p class="parrafo"><?= formatearMoneda($venta->abono) ?></p>
                         <?php endif ?>
                     </td>
                 </tr>
