@@ -362,6 +362,17 @@ $(document).ready(function () {
             showMessage('error', 'No tienes permisos para realizar esta acción.');
             return; // Detener la ejecución si no tiene permisos
         }
+
+        // Validar que el abono sea suficiente para marcar como entregado
+        if (nuevoEstado == 4) { // Estado Entregado
+            var abonoTotal = parseFloat($('#abono-venta').text().replace(/[^\d.-]/g, '')) || 0;
+            var precioProducto = parseFloat(precio) || 0;
+            
+            if (abonoTotal < precioProducto) {
+                showMessage('error', 'No se puede marcar como entregado. El abono total es menor al precio del producto.');
+                return;
+            }
+        }
     
         // Enviar solicitud AJAX al servidor
         $.ajax({

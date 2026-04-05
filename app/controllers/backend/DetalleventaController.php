@@ -111,6 +111,14 @@ class DetalleventaController extends PulseController
             'nota' => ''
         ];
 
+        // Validar que el abono sea suficiente para marcar como entregado
+        if ($objeto['nuevo_estado'] == 4) { // Estado Entregado
+            if ($venta->abono < $postData['precio']) {
+                return $this->function->jsonResponse('respuesta', false, 
+                    'No se puede marcar como entregado. El abono total ($' . number_format($venta->abono) . ') es menor al precio del producto ($' . number_format($postData['precio']) . ').');
+            }
+        }
+
         // Validar y procesar según el rol
         if ($postData['usuarioRol'] == 1) {
             // Transiciones permitidas para el administrador
