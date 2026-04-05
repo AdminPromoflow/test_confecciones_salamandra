@@ -96,6 +96,7 @@
                         <tr>
                             <th>Fecha del abono</th>
                             <th>Valor</th>
+                            <th>Medio de pago</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -106,6 +107,9 @@
                                 </td>
                                 <td style="text-align: right;">
                                     <p><?= formatearMoneda($abono->valor) ?></p>
+                                </td>
+                                <td style="text-align: right;">
+                                    <p><?= obtenerMedioPago($abono->mediopago) ?></p>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

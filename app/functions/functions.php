@@ -70,6 +70,20 @@ function formatearFecha($fecha)
     return $fechaFormateada;
 }
 
+function obtenerMedioPago($mediopago)
+{
+    switch (intval($mediopago)) {
+        case 0:
+            return 'Efectivo';
+        case 1:
+            return 'Nequi';
+        case 2:
+            return 'Daviplata';
+        default:
+            return 'N/A';
+    }
+}
+
 function fecha_con_hora($string)
 {
     $dia_sem = date('w', strtotime($string));
