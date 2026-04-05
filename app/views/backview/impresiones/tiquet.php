@@ -164,29 +164,43 @@
                         <p class="parrafo" style="font-size: 15px"><b><?= formatearMoneda($venta->total) ?></b></p>
                     </td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td style="text-align: start;" colspan="10">
-                        <?php if ($venta->pagacon >= $venta->total) : ?>
-                            <p class="parrafo">Efectivo</p>
-                        <?php else : ?>
-                            <?php if ($venta->descuento > 0) : ?>
-                                <p class="parrafo" style="margin-bottom: 5px;">Descuento</p>
+                <?php if (!empty($abonos)) : ?>
+                    <?php foreach ($abonos as $abono) : ?>
+                        <tr>
+                            <td></td>
+                            <td style="text-align: start;" colspan="10">
+                                <p class="parrafo">Abono (<?= obtenerMedioPago($abono->mediopago) ?>)</p>
+                            </td>
+                            <td style="text-align: right;">
+                                <p class="parrafo"><?= formatearMoneda($abono->valor) ?></p>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else : ?>
+                    <tr>
+                        <td></td>
+                        <td style="text-align: start;" colspan="10">
+                            <?php if ($venta->pagacon >= $venta->total) : ?>
+                                <p class="parrafo">Efectivo</p>
+                            <?php else : ?>
+                                <?php if ($venta->descuento > 0) : ?>
+                                    <p class="parrafo" style="margin-bottom: 5px;">Descuento</p>
+                                <?php endif ?>
+                                <p class="parrafo">Abono</p>
                             <?php endif ?>
-                            <p class="parrafo">Abono</p>
-                        <?php endif ?>
-                    </td>
-                    <td style="text-align: right;">
-                        <?php if ($venta->pagacon > 0) : ?>
-                            <p class="parrafo"><?= formatearMoneda($venta->pagacon) ?></p>
-                        <?php else : ?>
-                            <?php if ($venta->descuento > 0) : ?>
-                                <p class="parrafo" style="margin-bottom: 5px;">- <?= formatearMoneda($venta->descuento) ?></p>
+                        </td>
+                        <td style="text-align: right;">
+                            <?php if ($venta->pagacon > 0) : ?>
+                                <p class="parrafo"><?= formatearMoneda($venta->pagacon) ?></p>
+                            <?php else : ?>
+                                <?php if ($venta->descuento > 0) : ?>
+                                    <p class="parrafo" style="margin-bottom: 5px;">- <?= formatearMoneda($venta->descuento) ?></p>
+                                <?php endif ?>
+                                <p class="parrafo"><?= formatearMoneda($venta->abono) ?></p>
                             <?php endif ?>
-                            <p class="parrafo"><?= formatearMoneda($venta->abono) ?></p>
-                        <?php endif ?>
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
+                <?php endif; ?>
                 <tr>
                     <td></td>
                     <td style="text-align: start;" colspan="10">
