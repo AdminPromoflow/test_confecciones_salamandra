@@ -138,16 +138,10 @@ class VentasController extends PulseController
 
     public function imprimirTiquet($id_venta)
     {
-        echo "DEBUG: Entrando a imprimirTiquet con ID: $id_venta";
-        Logger::log("Hola estamos entrando aca!!!");
-        
         $data = [
             'venta' => $this->ventaModel->obtenerVentaById($id_venta),
-            'detalle_venta' => $this->dealleventaModel->obtenerDetalleByIdVenta($id_venta),
-            'abonos' => $this->abonoModel->obtenerAbonoById($id_venta)
+            'detalle_venta' => $this->dealleventaModel->obtenerDetalleByIdVenta($id_venta)
         ];
-
-        Logger::log("Abonos encontrados para venta $id_venta: " . json_encode($data['abonos']));
 
         $this->view('backview/impresiones/tiquet', $data);
     }
