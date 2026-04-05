@@ -138,6 +138,8 @@ class VentasController extends PulseController
 
     public function imprimirTiquet($id_venta)
     {
+                Logger::log("Hola estamos entrando aca!!!");
+
         $data = [
             'venta' => $this->ventaModel->obtenerVentaById($id_venta),
             'detalle_venta' => $this->dealleventaModel->obtenerDetalleByIdVenta($id_venta),
