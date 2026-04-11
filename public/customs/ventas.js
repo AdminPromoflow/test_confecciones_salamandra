@@ -307,6 +307,7 @@ $(document).ready(function () {
             data: { id_venta: idVenta }
         })
             .done(function (response) {
+                    alert('Respuesta del servidor: ' + JSON.stringify(response));
                 if (response.success) {
                     // Limpiar la tabla antes de agregar nuevas filas
                     $('#enlaceContainer').empty();
