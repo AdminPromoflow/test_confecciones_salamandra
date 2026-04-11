@@ -171,7 +171,7 @@ $(document).ready(function () {
 
     function mapTipoVenta(mediopago, idVenta) {
         if(idVenta!==null && idVenta!==undefined && idVenta!==''){
-            alert('idVenta: ' + idVenta);
+            alert(mediopago + ' ' + idVenta);
                     switch (parseInt(mediopago)) {
             case 0:
                 return 'Efectivo';
