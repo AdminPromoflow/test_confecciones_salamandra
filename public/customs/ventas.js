@@ -170,11 +170,8 @@ $(document).ready(function () {
     }
 
     function mapTipoVenta(mediopago, idVenta) {
-        // Siempre procesar el mapeo sin importar idVenta
         if(idVenta!==null && idVenta!==undefined && idVenta!==''){
             //alert(mediopago + ' ' + idVenta);
-        }
-        
         switch (parseInt(mediopago)) {
             case 1:
                 return 'Efectivo';
@@ -185,6 +182,8 @@ $(document).ready(function () {
             default:
                 return 'N/A';
         }
+        }
+
     }
 
 
