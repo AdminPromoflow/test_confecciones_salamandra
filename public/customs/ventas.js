@@ -169,6 +169,7 @@ $(document).ready(function () {
     }
 
     function mapTipoVenta(mediopago) {
+        alert(parseInt(mediopago));
         switch (parseInt(mediopago)) {
             case 0:
                 return 'Efectivo';
