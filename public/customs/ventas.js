@@ -301,9 +301,9 @@ $(document).ready(function () {
 
     // Solicitud de obtener detalle de venta
     function obtenerDetalle(idVenta) {
-        alert('JavaScript: Llamando a obtenerDetalle para venta ' + idVenta);
-        alert('JavaScript: urlPath = ' + urlPath);
-        alert('JavaScript: URL completa = ' + urlPath + '/detalleventa/obtenerDetalle');
+      //  alert('JavaScript: Llamando a obtenerDetalle para venta ' + idVenta);
+      //  alert('JavaScript: urlPath = ' + urlPath);
+     //   alert('JavaScript: URL completa = ' + urlPath + '/detalleventa/obtenerDetalle');
         
         $.ajax({
             url: urlPath + '/detalleventa/obtenerDetalle',
