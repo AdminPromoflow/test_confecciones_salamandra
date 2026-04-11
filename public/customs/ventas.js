@@ -151,6 +151,7 @@ $(document).ready(function () {
         }
 
         $.each(abonos, function (index, abono) {
+            alert(JSON.stringify(abono));
             const valor = parseFloat(abono.valor) || 0;
             const medio = mapTipoVenta(abono.mediopago);
             const fecha = formatDate(abono.registro, false);
