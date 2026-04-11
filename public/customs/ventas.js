@@ -450,7 +450,8 @@ $(document).ready(function () {
                 }
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                console.error('Error en la solicitud AJAX:', textStatus, errorThrown);
+                    alert('Error AJAX: ' + textStatus + ' - ' + errorThrown + '\nRespuesta servidor: ' + jqXHR.responseText);
+
             });
     }
 
