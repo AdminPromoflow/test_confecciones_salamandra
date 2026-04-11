@@ -68,6 +68,10 @@ class DetalleventaController extends PulseController
         $response = $this->detalleventaModel->obtenerDetalleByIdVenta($postData['id_venta']);
         $response['rolUsuario'] = $this->rolUsuario;
 
+                // Debug: Ver qué devuelve el modelo
+        Logger::log('DEBUG: Modelo devuelve: ' . var_export($response, true) . ' (tipo: ' . gettype($response) . ')');
+        
+
         return $this->function->jsonResponse('respuesta', $response);
     }
 

@@ -307,7 +307,6 @@ $(document).ready(function () {
             data: { id_venta: idVenta }
         })
             .done(function (response) {
-                    alert('Respuesta del servidor: ' + JSON.stringify(response));
                 if (response.success) {
                     // Limpiar la tabla antes de agregar nuevas filas
                     $('#enlaceContainer').empty();
@@ -450,8 +449,7 @@ $(document).ready(function () {
                 }
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                    alert('Error AJAX: ' + textStatus + ' - ' + errorThrown + '\nRespuesta servidor: ' + jqXHR.responseText);
-
+                console.error('Error en la solicitud AJAX:', textStatus, errorThrown);
             });
     }
 
