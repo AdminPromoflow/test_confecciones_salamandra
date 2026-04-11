@@ -170,7 +170,7 @@ $(document).ready(function () {
     }
 
     function mapTipoVenta(mediopago, idVenta) {
-        if(idVenta!==null && idVenta!==undefined && idVenta!==''){
+       // if(idVenta!==null && idVenta!==undefined && idVenta!==''){
             //alert(mediopago + ' ' + idVenta);
         switch (parseInt(mediopago)) {
             case 1:
@@ -182,7 +182,7 @@ $(document).ready(function () {
             default:
                 return 'N/A';
         }
-        }
+       // }
 
     }
 
