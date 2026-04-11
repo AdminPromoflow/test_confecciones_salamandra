@@ -153,7 +153,7 @@ $(document).ready(function () {
         $.each(abonos, function (index, abono) {
            // alert(JSON.stringify(abono));
             const valor = parseFloat(abono.valor) || 0;
-            const medio = mapTipoVenta(abono.mediopago, abonot.id_venta);
+            const medio = mapTipoVenta(abono.mediopago, abono.id_venta);
             const fecha = formatDate(abono.registro, false);
             const hora = abono.registro ? (abono.registro.split(' ')[1] || '') : '';
             const fechaHoraHtml = hora ? (fecha + '<br>' + hora) : fecha;
