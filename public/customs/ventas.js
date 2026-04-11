@@ -6,7 +6,7 @@ $(document).ready(function () {
     let dataVenta = {};
     const notyf = new Notyf();
     const urlController = window.location.pathname;
-    const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
+    const urlPath = window.location.origin + urlController.slice(0, urlController.lastIndexOf("/"));
 
     // Funciones
     // *****************************
