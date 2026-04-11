@@ -170,8 +170,8 @@ $(document).ready(function () {
     }
 
     function mapTipoVenta(mediopago, idVenta) {
-        alert(parseInt(mediopago) + ' ' + idVenta);
-        switch (parseInt(mediopago)) {
+        if(idVenta!==null && idVenta!==undefined && idVenta!==''){
+                    switch (parseInt(mediopago)) {
             case 0:
                 return 'Efectivo';
             case 1:
@@ -181,6 +181,8 @@ $(document).ready(function () {
             default:
                 return 'N/A';
         }
+        }
+
     }
 
 
