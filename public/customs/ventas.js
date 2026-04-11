@@ -173,11 +173,11 @@ $(document).ready(function () {
         if(idVenta!==null && idVenta!==undefined && idVenta!==''){
             //alert(mediopago + ' ' + idVenta);
         switch (parseInt(mediopago)) {
-            case 0:
-                return 'Efectivo';
             case 1:
-                return 'Nequi';
+                return 'Efectivo';
             case 2:
+                return 'Nequi';
+            case 3:
                 return 'Daviplata';
             default:
                 return 'N/A';
