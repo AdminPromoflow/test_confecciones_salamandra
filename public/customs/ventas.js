@@ -153,7 +153,7 @@ $(document).ready(function () {
         $.each(abonos, function (index, abono) {
            // alert(JSON.stringify(abono));
             const valor = parseFloat(abono.valor) || 0;
-            const medio = mapTipoVenta(abono.mediopago);
+            const medio = mapTipoVenta(abono.mediopago, abonot.id_venta);
             const fecha = formatDate(abono.registro, false);
             const hora = abono.registro ? (abono.registro.split(' ')[1] || '') : '';
             const fechaHoraHtml = hora ? (fecha + '<br>' + hora) : fecha;
@@ -169,8 +169,8 @@ $(document).ready(function () {
         });
     }
 
-    function mapTipoVenta(mediopago) {
-        //alert(parseInt(mediopago));
+    function mapTipoVenta(mediopago, idVenta) {
+        alert(parseInt(mediopago) + ' ' + idVenta);
         switch (parseInt(mediopago)) {
             case 0:
                 return 'Efectivo';
