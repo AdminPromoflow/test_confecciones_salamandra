@@ -6,7 +6,7 @@ $(document).ready(function () {
     let dataVenta = {};
     const notyf = new Notyf();
     const urlController = window.location.pathname;
-    const urlPath = window.location.origin + urlController.slice(0, urlController.lastIndexOf("/"));
+    const urlPath = urlController.slice(0, urlController.lastIndexOf("/"));
 
     // Funciones
     // *****************************
@@ -301,9 +301,8 @@ $(document).ready(function () {
 
     // Solicitud de obtener detalle de venta
     function obtenerDetalle(idVenta) {
-      //  alert('JavaScript: Llamando a obtenerDetalle para venta ' + idVenta);
-      //  alert('JavaScript: urlPath = ' + urlPath);
-     //   alert('JavaScript: URL completa = ' + urlPath + '/detalleventa/obtenerDetalle');
+        alert('JavaScript: Llamando a obtenerDetalle para venta ' + idVenta);
+        alert('JavaScript: URL = ' + urlPath + '/detalleventa/obtenerDetalle');
         
         $.ajax({
             url: urlPath + '/detalleventa/obtenerDetalle',

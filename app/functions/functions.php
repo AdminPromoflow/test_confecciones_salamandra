@@ -142,11 +142,11 @@ function fecha_sin_hora($string)
 function obtenerMedioPago($mediopago)
 {
     switch (intval($mediopago)) {
-        case 0:
-            return 'Efectivo';
         case 1:
-            return 'Nequi';
+            return 'Efectivo';
         case 2:
+            return 'Nequi';
+        case 3:
             return 'Daviplata';
         default:
             return 'N/A';
