@@ -463,12 +463,16 @@ $(document).ready(function () {
 
         // Validar que el abono sea suficiente para marcar como entregado
         if (nuevoEstado == 4) { // Estado Entregado
-            var abonoTotal = parseFloat($('#abono-venta').text().replace(/[^\d.-]/g, '')) || 0;
+            // Extraer el valor del abono total del campo que puede tener HTML
+            var abonoTotalText = $('#abono-venta').clone().children().remove().end().text().trim();
+            var abonoTotal = parseFloat(abonoTotalText.replace(/[^\d.-]/g, '')) || 0;
+            
             var totalEntregado = parseFloat($('#entregado-venta').text().replace(/[^\d.-]/g, '')) || 0;
             var disponibleParaEntregar = abonoTotal - totalEntregado;
             var precioProducto = parseFloat(precio) || 0;
             
             // Depuración temporal
+            console.log('Depuración - Texto Abono Total:', abonoTotalText);
             console.log('Depuración - Abono Total:', abonoTotal);
             console.log('Depuración - Total Entregado:', totalEntregado);
             console.log('Depuración - Disponible Para Entregar:', disponibleParaEntregar);
