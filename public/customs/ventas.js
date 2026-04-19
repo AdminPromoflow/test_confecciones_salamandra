@@ -468,8 +468,14 @@ $(document).ready(function () {
             var disponibleParaEntregar = abonoTotal - totalEntregado;
             var precioProducto = parseFloat(precio) || 0;
             
+            // Depuración temporal
+            console.log('Depuración - Abono Total:', abonoTotal);
+            console.log('Depuración - Total Entregado:', totalEntregado);
+            console.log('Depuración - Disponible Para Entregar:', disponibleParaEntregar);
+            console.log('Depuración - Precio Producto:', precioProducto);
+            
             if (disponibleParaEntregar < precioProducto) {
-                showMessage('error', 'No se puede marcar como entregado. El saldo disponible para entregar ($' + formatCurrency(disponibleParaEntregar) + ') es menor al precio del producto ($' + formatCurrency(precioProducto) + ').');
+                showMessage('error', 'No se puede marcar como entregado. El saldo disponible para entregar (' + formatCurrency(disponibleParaEntregar) + ') es menor al precio del producto (' + formatCurrency(precioProducto) + ').');
                 return;
             }
         }
