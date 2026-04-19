@@ -204,23 +204,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="table text-sm mb-0 table-striped table-sm">
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Gran total:</th>
-                                                <td id="gran-total" class="text-right"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Abono:</th>
-                                                <td id="total-abonos" class="text-right"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Saldo pendiente:</th>
-                                                <td id="saldo-pendiente" class="text-right text-danger"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                                    </div>
                                 <div class="mb-3">
                                     <h5>Nota adicional</h5>
                                     <table class="table text-sm mb-0 table-striped table-sm">
