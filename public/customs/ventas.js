@@ -120,7 +120,7 @@ $(document).ready(function () {
 
                     vistaVenta(venta);
                     renderAbonos(abonos || []);
-                    // renderResumenAbonos(abonos || [], venta); // Eliminado para no mostrar tabla de totales
+                    renderResumenAbonos(abonos || [], venta);
                     obtenerDetalle(venta.id_venta);
 
                     $('html, body').animate({
