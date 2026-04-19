@@ -464,10 +464,12 @@ $(document).ready(function () {
         // Validar que el abono sea suficiente para marcar como entregado
         if (nuevoEstado == 4) { // Estado Entregado
             var abonoTotal = parseFloat($('#abono-venta').text().replace(/[^\d.-]/g, '')) || 0;
+            var totalEntregado = parseFloat($('#entregado-venta').text().replace(/[^\d.-]/g, '')) || 0;
+            var disponibleParaEntregar = abonoTotal - totalEntregado;
             var precioProducto = parseFloat(precio) || 0;
             
-            if (abonoTotal < precioProducto) {
-                showMessage('error', 'No se puede marcar como entregado. El abono total es menor al precio del producto.');
+            if (disponibleParaEntregar < precioProducto) {
+                showMessage('error', 'No se puede marcar como entregado. El saldo disponible para entregar ($' + formatCurrency(disponibleParaEntregar) + ') es menor al precio del producto ($' + formatCurrency(precioProducto) + ').');
                 return;
             }
         }

@@ -117,9 +117,10 @@ class DetalleventaController extends PulseController
 
         // Validar que el abono sea suficiente para marcar como entregado
         if ($objeto['nuevo_estado'] == 4) { // Estado Entregado
-            if ($venta->abono < $postData['precio']) {
+            $disponibleParaEntregar = $venta->abono - $venta->entregado;
+            if ($disponibleParaEntregar < $postData['precio']) {
                 return $this->function->jsonResponse('respuesta', false, 
-                    'No se puede marcar como entregado. El abono total ($' . number_format($venta->abono) . ') es menor al precio del producto ($' . number_format($postData['precio']) . ').');
+                    'No se puede marcar como entregado. El saldo disponible para entregar ($' . number_format($disponibleParaEntregar) . ') es menor al precio del producto ($' . number_format($postData['precio']) . ').');
             }
         }
 
