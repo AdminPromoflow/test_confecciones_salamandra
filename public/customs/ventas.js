@@ -245,7 +245,6 @@ $(document).ready(function () {
         const descuento = parseFloat(resultado.descuento) || 0;
         const abono = parseFloat(resultado.abono) || 0;
         const saldo = parseFloat(resultado.saldo) || 0;
-        const entregado = parseFloat(resultado.entregado) || 0;
         
         // Mostrar valores financieros
         $('#total-venta').text(formatCurrency(total));
@@ -255,7 +254,7 @@ $(document).ready(function () {
             formatCurrency(abono)
         );
         $('#saldo-venta').text(formatCurrency(saldo));
-        $('#entregado-venta').text(formatCurrency(entregado));
+        $('#entregado-venta').text(formatCurrency(0)); // Inicialmente en 0, se actualizará cuando carguen los detalles
         
         // Información adicional
         $('#cajero-venta').text(resultado.usuario);
@@ -428,6 +427,10 @@ $(document).ready(function () {
                             $('#table-body').append(filaDetalle);
                         });
 
+                        // Calcular y actualizar total entregado dinámicamente
+                        const totalEntregadoCalculado = calcularTotalEntregado(detalles);
+                        $('#entregado-venta').text(formatCurrency(totalEntregadoCalculado));
+
                         // Agregar evento de clic a la columna de estado
                         $('.actualizar-estado').off('click').on('click', function () {
                             // Encuentra el elemento tr más cercano
@@ -454,7 +457,17 @@ $(document).ready(function () {
             });
     }
 
-    function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevoEstado, precio, rolUsuario) {
+    function calcularTotalEntregado(detalles) {
+    if (!detalles || !Array.isArray(detalles)) {
+        return 0;
+    }
+    
+    return detalles
+        .filter(detalle => parseInt(detalle.estado) === 4) // Estado Entregado
+        .reduce((suma, detalle) => suma + (parseFloat(detalle.precio) || 0), 0);
+}
+
+function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevoEstado, precio, rolUsuario) {
         // Validar si el usuario tiene permisos para realizar la acción
         if (!validarPermisos(rolUsuario, anteriorEstado, nuevoEstado)) {
             showMessage('error', 'No tienes permisos para realizar esta acción.');
@@ -478,7 +491,7 @@ $(document).ready(function () {
             console.log('Depuración - Disponible Para Entregar:', disponibleParaEntregar);
             console.log('Depuración - Precio Producto:', precioProducto);
             
-            if (precioProducto < disponibleParaEntregar) {
+            if (disponibleParaEntregar < precioProducto) {
                 showMessage('error', 'No se puede marcar como entregado. El saldo disponible para entregar (' + formatCurrency(disponibleParaEntregar) + ') es menor al precio del producto (' + formatCurrency(precioProducto) + ').');
                 return;
             }
