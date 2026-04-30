@@ -474,25 +474,28 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             return; // Detener la ejecución si no tiene permisos
         }
 
-        // Validar que el abono sea suficiente para marcar como entregado
+        // Validar que el total entregado no sea mayor al abono total
         if (nuevoEstado == 4) { // Estado Entregado
             // Extraer el valor del abono total del campo que puede tener HTML
             var abonoTotalText = $('#abono-venta').clone().children().remove().end().text().trim();
             var abonoTotal = parseFloat(abonoTotalText.replace(/[^\d.-]/g, '')) || 0;
             
             var totalEntregado = parseFloat($('#entregado-venta').text().replace(/[^\d.-]/g, '')) || 0;
-            var disponibleParaEntregar = abonoTotal - totalEntregado;
             var precioProducto = parseFloat(precio) || 0;
+            
+            // Calcular cuánto quedaría de total entregado si se aprueba este cambio
+            var nuevoTotalEntregado = totalEntregado + precioProducto;
             
             // Depuración temporal
             console.log('Depuración - Texto Abono Total:', abonoTotalText);
             console.log('Depuración - Abono Total:', abonoTotal);
-            console.log('Depuración - Total Entregado:', totalEntregado);
-            console.log('Depuración - Disponible Para Entregar:', disponibleParaEntregar);
+            console.log('Depuración - Total Entregado Actual:', totalEntregado);
+            console.log('Depuración - Nuevo Total Entregado (con este producto):', nuevoTotalEntregado);
             console.log('Depuración - Precio Producto:', precioProducto);
             
-            if (disponibleParaEntregar < precioProducto) {
-                showMessage('error', 'No se puede marcar como entregado. El saldo disponible para entregar (' + formatCurrency(disponibleParaEntregar) + ') es menor al precio del producto (' + formatCurrency(precioProducto) + ').');
+            // Validar si el nuevo total entregado sería mayor al abono total
+            if (nuevoTotalEntregado > abonoTotal) {
+                showMessage('error', 'No se puede marcar como entregado. El total entregado sería (' + formatCurrency(nuevoTotalEntregado) + ') que es mayor al total de abonos (' + formatCurrency(abonoTotal) + ').');
                 return;
             }
         }
