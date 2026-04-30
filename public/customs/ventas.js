@@ -467,6 +467,26 @@ $(document).ready(function () {
         .reduce((suma, detalle) => suma + (parseFloat(detalle.precio) || 0), 0);
 }
 
+function actualizarSaldoDinamico(idVenta) {
+    // Obtener los valores actuales de la venta
+    var totalText = $('#total-venta').text().trim();
+    var abonoTotalText = $('#abono-venta').clone().children().remove().end().text().trim();
+    var totalEntregadoText = $('#entregado-venta').text().trim();
+    
+    // Limpiar y convertir los valores
+    var total = parseFloat(totalText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
+    var abonoTotal = parseFloat(abonoTotalText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
+    var totalEntregado = parseFloat(totalEntregadoText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
+    
+    // Calcular el nuevo saldo: Total - Abono - Total Entregado
+    var nuevoSaldo = total - abonoTotal - totalEntregado;
+    
+    // Actualizar el campo de saldo
+    $('#saldo-venta').text(formatCurrency(Math.max(0, nuevoSaldo))); // Evitar saldos negativos
+    
+    console.log('Saldo actualizado - Total:', total, 'Abono:', abonoTotal, 'Entregado:', totalEntregado, 'Nuevo Saldo:', nuevoSaldo);
+}
+
 function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevoEstado, precio, rolUsuario) {
         // Validar si el usuario tiene permisos para realizar la acción
         if (!validarPermisos(rolUsuario, anteriorEstado, nuevoEstado)) {
@@ -522,13 +542,15 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
         .done(function (response) {
             if (response.success && response.respuesta) {
                 // Actualización exitosa
-                // actualizarInterfazUsuario(idDetalle, nuevoEstado);
                 showMessage('success', response.mensaje || 'Estado del producto se actualizó correctamente.');
     
                 // Limpiar campos del formulario
                 $('#id-detalle').val('');
                 $('#anteriorEstado').val('');
                 $('#modal-actualizarEstado').modal('hide');
+    
+                // Actualizar el saldo dinámicamente después del cambio
+                actualizarSaldoDinamico(idVenta);
     
                 // Si se cancela o retorna, actualizar el inventario
                 if ( nuevoEstado == 6) {
