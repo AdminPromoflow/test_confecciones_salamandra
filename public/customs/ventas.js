@@ -478,17 +478,22 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
         if (nuevoEstado == 4) { // Estado Entregado
             // Extraer el valor del abono total del campo que puede tener HTML
             var abonoTotalText = $('#abono-venta').clone().children().remove().end().text().trim();
-            var abonoTotal = parseFloat(abonoTotalText.replace(/[^\d.-]/g, '')) || 0;
+            // Corregir extracción para manejar formato colombiano: eliminar $, espacios y puntos, luego convertir
+            var abonoTotal = parseFloat(abonoTotalText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
             
-            var totalEntregado = parseFloat($('#entregado-venta').text().replace(/[^\d.-]/g, '')) || 0;
+            var totalEntregadoText = $('#entregado-venta').text().trim();
+            var totalEntregado = parseFloat(totalEntregadoText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
             var precioProducto = parseFloat(precio) || 0;
             
             // Calcular cuánto quedaría de total entregado si se aprueba este cambio
             var nuevoTotalEntregado = totalEntregado + precioProducto;
             
             // Depuración temporal
-            console.log('Depuración - Texto Abono Total:', abonoTotalText);
+            console.log('Depuración - Texto Abono Total Original:', abonoTotalText);
+            console.log('Depuración - Texto Abono Total Limpio:', abonoTotalText.replace(/[$\s.]/g, ''));
             console.log('Depuración - Abono Total:', abonoTotal);
+            console.log('Depuración - Texto Total Entregado Original:', totalEntregadoText);
+            console.log('Depuración - Texto Total Entregado Limpio:', totalEntregadoText.replace(/[$\s.]/g, ''));
             console.log('Depuración - Total Entregado Actual:', totalEntregado);
             console.log('Depuración - Nuevo Total Entregado (con este producto):', nuevoTotalEntregado);
             console.log('Depuración - Precio Producto:', precioProducto);
