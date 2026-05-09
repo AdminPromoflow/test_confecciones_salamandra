@@ -56,7 +56,7 @@ $(document).ready(function () {
     const commonOptions = {
       message: contentMessage,
       dismissible: true,
-      duration: 15000,
+      duration: 3500,
       position: {
         x: 'right',
         y: 'top',
