@@ -209,7 +209,7 @@ class DetalleventaController extends PulseController
 
         // Cambiar estado de venta si está completamente pagada/cancelada
         if ($objeto['saldo'] <= 0 && $objeto['estado_venta'] == 1) {
-            $objeto['estado_venta'] = 1;  // Cambiar a pagada
+            $objeto['estado_venta'] = 2;  // Cambiar a pagada
         }
 
         // Actualizar venta y detalle
