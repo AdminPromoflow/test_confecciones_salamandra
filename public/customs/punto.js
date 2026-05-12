@@ -345,10 +345,10 @@ function verificarEstado(cantidadProducto, stock) {
   };
 
   function evaluarTipoVenta(total, pagacon) {
-alert("TAREA OSCAR" + total + "  " + pagacon);
+
     let hayProductosPendientes = false;
     
-    $('#table-cart tr').each(function() {
+    /*$('#table-cart tr').each(function() {
       let estadoBadge = $(this).find('td:nth-child(5) .badge');
       if (estadoBadge.text().trim() === 'Pendiente' || estadoBadge.text().trim() === 'Urgente') {
         hayProductosPendientes = true;
@@ -356,7 +356,8 @@ alert("TAREA OSCAR" + total + "  " + pagacon);
       }
     });
     
-    return (hayProductosPendientes || pagacon < total) ? 2 : 1;
+    return (hayProductosPendientes || pagacon < total) ? 2 : 1;*/
+    return true;
   }
 
   function limpiarCampos() {
