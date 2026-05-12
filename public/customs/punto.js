@@ -345,6 +345,7 @@ function verificarEstado(cantidadProducto, stock) {
   };
 
   function evaluarTipoVenta(total, pagacon) {
+alert("TAREA OSCAR" + total + "  " + pagacon);
     let hayProductosPendientes = false;
     
     $('#table-cart tr').each(function() {
