@@ -357,7 +357,7 @@ function verificarEstado(cantidadProducto, stock) {
     });
     
     return (hayProductosPendientes || pagacon < total) ? 2 : 1;*/
-    return true;
+    return 2;
   }
 
   function limpiarCampos() {
