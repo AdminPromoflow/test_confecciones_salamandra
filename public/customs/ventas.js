@@ -68,7 +68,7 @@ $(document).ready(function () {
         const notyfOptions = {
             message: contentMessage,
             dismissible: true,
-            duration: 6000,
+            duration: 12000,
             position: {
                 x: 'center',
                 y: 'top',
