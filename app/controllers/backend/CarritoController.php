@@ -98,7 +98,6 @@ class CarritoController extends PulseController
     // Asignar el id_usuario y validar la fecha de entrega
     $postData['id_usuario'] = $this->idUsuario;
     $postData['fecha_entrega'] = !empty($postData['fecha_entrega']) ? $postData['fecha_entrega'] : null;
-
     try {
         
         // Guardar el producto en el carrito
@@ -107,12 +106,13 @@ class CarritoController extends PulseController
         if (!$guardarCarrito) {
             throw new Exception('No se pudo guardar el producto en el carrito.');
         }
-        
-        
-        }
-if ($postData['estado'] > 1) {
+
+        if ($postData['estado'] > 1) {
+
             // Restar en el inventario 1 si el producto no tiene estado pendiente o urgente
             $response = $this->inventarioProductoModel->restamosInventario($postData['id_producto'], $postData['id_sucursal']);
+        }
+
 
         // if (!$response) {
         //     throw new Exception('No se pudo actualizar el inventario.');
@@ -145,10 +145,13 @@ if ($postData['estado'] > 1) {
 
         $carrito = $this->carritoModel->obtenerCarrito($postData['id_cliente']);
 
-        foreach ($carrito as $detalle) {
-            $respuesta = $this->carritoModel->quitarProducto($detalle->id_carrito);
-            $this->inventarioProductoModel->sumamosInventario($detalle->id_producto, $this->idSucursal);
-        }
+    foreach ($carrito as $detalle) {
+        $respuesta = $this->carritoModel->quitarProducto($detalle->id_carrito);
+        //Logger::log("Producto ID: " . $detalle->id_producto . " - Estado: " . $detalle->estado);
+        if ($detalle->estado > 1) {
+        $this->inventarioProductoModel->sumamosInventario($detalle->id_producto, $this->idSucursal);
+    }
+    }
 
         $this->function->jsonResponse('respuesta', $respuesta);
     }
