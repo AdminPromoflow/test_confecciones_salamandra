@@ -224,7 +224,7 @@ $(document).ready(function () {
         $('#factura-venta').text(resultado.id_venta);
         $('#sucursal-venta').text('Sucursal ' + resultado.nombre_sucursal);
         $('#tipo-venta').text(mapTipoVenta(resultado.mediopago));
-        
+
         // Estado de la venta
         switch (parseInt(resultado.estado)) {
             case 1:
@@ -239,23 +239,23 @@ $(document).ready(function () {
             default:
                 break;
         }
-        
+
         // Cálculos financieros
         const total = parseFloat(resultado.total) || 0;
         const descuento = parseFloat(resultado.descuento) || 0;
         const abono = parseFloat(resultado.abono) || 0;
         const saldo = parseFloat(resultado.saldo) || 0;
-        
+
         // Mostrar valores financieros
         $('#total-venta').text(formatCurrency(total));
         $('#descuento-venta').text(formatCurrency(descuento));
-        $('#abono-venta').html(saldo > 0 ? 
-            `<span id="abonar" class="badge badge-primary pt-1 px-3" data-venta='${JSON.stringify(resultado)}' style="cursor:pointer;">+ Abono</span> ${formatCurrency(abono)}` : 
+        $('#abono-venta').html(saldo > 0 ?
+            `<span id="abonar" class="badge badge-primary pt-1 px-3" data-venta='${JSON.stringify(resultado)}' style="cursor:pointer;">+ Abono</span> ${formatCurrency(abono)}` :
             formatCurrency(abono)
         );
         $('#saldo-venta').text(formatCurrency(saldo));
         $('#entregado-venta').text(formatCurrency(0)); // Inicialmente en 0, se actualizará cuando carguen los detalles
-        
+
         // Información adicional
         $('#cajero-venta').text(resultado.usuario);
         $('#nombre-cliente').text(resultado.cliente_nombre + resultado.cliente_apellidos);
@@ -263,7 +263,7 @@ $(document).ready(function () {
         $('#telefono-cliente').text(resultado.cliente_telefono);
         $('#email-cliente').text(resultado.cliente_email);
         $('#nota-venta').text(resultado.nota);
-        
+
         $('.titulo-venta').text("Detalle de la venta #" + $('#factura-venta').text());
         $('#contenedor-venta').show();
     }
@@ -300,7 +300,7 @@ $(document).ready(function () {
 
     // Solicitud de obtener detalle de venta
     function obtenerDetalle(idVenta) {
-        
+
         $.ajax({
             url: urlPath + '/detalleventa/obtenerDetalle',
             method: 'POST',
@@ -314,7 +314,7 @@ $(document).ready(function () {
                     // Crear el enlace con el ID de venta
                     let enlace = $('<a>', {
                         class: 'btn btn-outline-dark btn-sm',
-                        href: 'https://www.aleinarossui.com/backend/ventas/imprimirTiquet/' + idVenta,
+                        href: 'https://www.confeccionessalamandra.com/backend/ventas/imprimirTiquet/' + idVenta,
                         html: '<i class="feather icon-printer"></i> Imprimir factura',
                         target: '_blank'
                     });
@@ -461,7 +461,7 @@ $(document).ready(function () {
     if (!detalles || !Array.isArray(detalles)) {
         return 0;
     }
-    
+
     return detalles
         .filter(detalle => parseInt(detalle.estado) === 4) // Estado Entregado
         .reduce((suma, detalle) => suma + (parseFloat(detalle.precio) || 0), 0);
@@ -472,18 +472,18 @@ function actualizarSaldoDinamico(idVenta) {
     var totalText = $('#total-venta').text().trim();
     var abonoTotalText = $('#abono-venta').clone().children().remove().end().text().trim();
     var totalEntregadoText = $('#entregado-venta').text().trim();
-    
+
     // Limpiar y convertir los valores
     var total = parseFloat(totalText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
     var abonoTotal = parseFloat(abonoTotalText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
     var totalEntregado = parseFloat(totalEntregadoText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
-    
+
     // Calcular el nuevo saldo: Total - Abono - Total Entregado
     var nuevoSaldo = total - abonoTotal - totalEntregado;
-    
+
     // Actualizar el campo de saldo
     $('#saldo-venta').text(formatCurrency(Math.max(0, nuevoSaldo))); // Evitar saldos negativos
-    
+
     console.log('Saldo actualizado - Total:', total, 'Abono:', abonoTotal, 'Entregado:', totalEntregado, 'Nuevo Saldo:', nuevoSaldo);
 }
 
@@ -500,14 +500,14 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             var abonoTotalText = $('#abono-venta').clone().children().remove().end().text().trim();
             // Corregir extracción para manejar formato colombiano: eliminar $, espacios y puntos, luego convertir
             var abonoTotal = parseFloat(abonoTotalText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
-            
+
             var totalEntregadoText = $('#entregado-venta').text().trim();
             var totalEntregado = parseFloat(totalEntregadoText.replace(/[$\s.]/g, '').replace(',', '.')) || 0;
             var precioProducto = parseFloat(precio) || 0;
-            
+
             // Calcular cuánto quedaría de total entregado si se aprueba este cambio
             var nuevoTotalEntregado = totalEntregado + precioProducto;
-            
+
             // Depuración temporal
             console.log('Depuración - Texto Abono Total Original:', abonoTotalText);
             console.log('Depuración - Texto Abono Total Limpio:', abonoTotalText.replace(/[$\s.]/g, ''));
@@ -517,14 +517,14 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             console.log('Depuración - Total Entregado Actual:', totalEntregado);
             console.log('Depuración - Nuevo Total Entregado (con este producto):', nuevoTotalEntregado);
             console.log('Depuración - Precio Producto:', precioProducto);
-            
+
             // Validar si el nuevo total entregado sería mayor al abono total
             if (nuevoTotalEntregado > abonoTotal) {
                 showMessage('error', 'No se puede marcar como entregado. El total entregado sería (' + formatCurrency(nuevoTotalEntregado) + ') que es mayor al total de abonos (' + formatCurrency(abonoTotal) + ').');
                 return;
             }
         }
-    
+
         // Enviar solicitud AJAX al servidor
         $.ajax({
             url: urlPath + '/detalleventa/actualizarEstadoDetalle',
@@ -543,15 +543,15 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             if (response.success && response.respuesta) {
                 // Actualización exitosa
                 showMessage('success', response.mensaje || 'Estado del producto se actualizó correctamente.');
-    
+
                 // Limpiar campos del formulario
                 $('#id-detalle').val('');
                 $('#anteriorEstado').val('');
                 $('#modal-actualizarEstado').modal('hide');
-    
+
                 // Actualizar el saldo dinámicamente después del cambio
                 actualizarSaldoDinamico(idVenta);
-    
+
                 // Si se cancela o retorna, actualizar el inventario
                 if ( nuevoEstado == 6) {
                     actualizarInventario(dataVenta);
@@ -568,7 +568,7 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             showMessage('error', 'Error al realizar la solicitud AJAX.');
         });
     }
-    
+
     // Función para validar permisos según el rol del usuario
     function validarPermisos(rolUsuario, anteriorEstado, nuevoEstado) {
         // Definir las transiciones permitidas para el administrador (rol 1)
@@ -582,7 +582,7 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             };
             return transicionesAdministrador[anteriorEstado]?.includes(nuevoEstado) || false;
         }
-    
+
         // Definir las transiciones permitidas para el cajero (rol 2)
         if (rolUsuario == 2) {
             const transicionesCajero = {
@@ -593,7 +593,7 @@ function actualizarEstado(idVenta, estadoVenta, idDetalle, anteriorEstado, nuevo
             };
             return transicionesCajero[anteriorEstado]?.includes(nuevoEstado) || false;
         }
-    
+
         // Si no es administrador ni cajero, no tiene permisos
         return false;
     }
